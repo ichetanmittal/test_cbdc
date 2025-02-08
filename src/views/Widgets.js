@@ -33,7 +33,6 @@ import {
   Label,
   FormGroup,
   Input,
-  CustomInput,
   ListGroupItem,
   ListGroup,
   Table,
@@ -306,7 +305,7 @@ const Widgets = () => {
                 <CardTitle tag="h1">6,332</CardTitle>
                 <h3 className="card-category">Total Public Contributions</h3>
                 <p className="card-description">
-                  After a very successful two-year run, we’re going to be
+                  After a very successful two-year run, we're going to be
                   changing the way that contributions work.
                 </p>
               </CardBody>
@@ -317,7 +316,7 @@ const Widgets = () => {
                     <div className="card-stats justify-content-center">
                       <div className="d-flex justify-content-center align-items-center">
                         <span className="mr-2">Off</span>
-                        <CustomInput
+                        <Input
                           type="switch"
                           id="switch-1"
                           defaultChecked
@@ -332,7 +331,7 @@ const Widgets = () => {
                     <div className="card-stats justify-content-center">
                       <div className="d-flex justify-content-center align-items-center">
                         <span className="mr-2">Off</span>
-                        <CustomInput
+                        <Input
                           type="switch"
                           id="switch-2"
                           className="mt-n4"
@@ -362,7 +361,7 @@ const Widgets = () => {
                         <p>
                           Wifey made the best Father's Day meal ever. So
                           thankful so happy so blessed. Thank you for making my
-                          family We just had fun with the “future” theme !!! It
+                          family We just had fun with the "future" theme !!! It
                           was a fun night all together ... The always rude Kanye
                           Show at 2am Sold Out Famous viewing @ Figueroa and
                           12th in downtown.
@@ -385,7 +384,7 @@ const Widgets = () => {
                       <div className="timeline-body">
                         <p>
                           Thank God for the support of my wife and real friends.
-                          I also wanted to point out that it’s the first album
+                          I also wanted to point out that it's the first album
                           to go number 1 off of streaming!!! I love you Ellen
                           and also my number one design rule of anything I do
                           from shoes to music to homes is that Kim has to like
@@ -404,14 +403,14 @@ const Widgets = () => {
                       </div>
                       <div className="timeline-body">
                         <p>
-                          Called I Miss the Old Kanye That’s all it was Kanye
+                          Called I Miss the Old Kanye That's all it was Kanye
                           And I love you like Kanye loves Kanye Famous viewing @
                           Figueroa and 12th in downtown LA 11:10PM
                         </p>
                         <p>
                           What if Kanye made a song about Kanye Royère doesn't
                           make a Polar bear bed but the Polar bear couch is my
-                          favorite piece of furniture we own It wasn’t any
+                          favorite piece of furniture we own It wasn't any
                           Kanyes Set on his goals Kanye
                         </p>
                         <hr />

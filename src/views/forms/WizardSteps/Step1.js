@@ -19,9 +19,8 @@ import classnames from "classnames";
 // reactstrap components
 import {
   Input,
-  InputGroupAddon,
-  InputGroupText,
   InputGroup,
+  InputGroupText,
   Row,
   Col,
 } from "reactstrap";
@@ -143,16 +142,10 @@ const Step1 = React.forwardRef((props, ref) => {
       </h5>
       <Row className="justify-content-center mt-5">
         <Col sm="5">
-          <InputGroup
-            className={classnames(firstnameState, {
-              "input-group-focus": firstnameFocus,
-            })}
-          >
-            <InputGroupAddon addonType="prepend">
-              <InputGroupText>
-                <i className="tim-icons icon-single-02" />
-              </InputGroupText>
-            </InputGroupAddon>
+          <InputGroup>
+            <InputGroup.Text>
+              <i className="tim-icons icon-single-02" />
+            </InputGroup.Text>
             <Input
               name="firstname"
               placeholder="First Name..."
@@ -165,16 +158,10 @@ const Step1 = React.forwardRef((props, ref) => {
               <label className="error">This field is required.</label>
             ) : null}
           </InputGroup>
-          <InputGroup
-            className={classnames(emailState, {
-              "input-group-focus": emailFocus,
-            })}
-          >
-            <InputGroupAddon addonType="prepend">
-              <InputGroupText>
-                <i className="tim-icons icon-email-85" />
-              </InputGroupText>
-            </InputGroupAddon>
+          <InputGroup>
+            <InputGroup.Text>
+              <i className="tim-icons icon-email-85" />
+            </InputGroup.Text>
             <Input
               name="email"
               placeholder="Email..."
@@ -189,16 +176,10 @@ const Step1 = React.forwardRef((props, ref) => {
           </InputGroup>
         </Col>
         <Col sm="5">
-          <InputGroup
-            className={classnames(lastnameState, {
-              "input-group-focus": lastnameFocus,
-            })}
-          >
-            <InputGroupAddon addonType="prepend">
-              <InputGroupText>
-                <i className="tim-icons icon-caps-small" />
-              </InputGroupText>
-            </InputGroupAddon>
+          <InputGroup>
+            <InputGroup.Text>
+              <i className="tim-icons icon-caps-small" />
+            </InputGroup.Text>
             <Input
               name="lastname"
               placeholder="Last Name..."
@@ -211,16 +192,10 @@ const Step1 = React.forwardRef((props, ref) => {
               <label className="error">This field is required.</label>
             ) : null}
           </InputGroup>
-          <InputGroup
-            className={classnames(phoneState, {
-              "input-group-focus": phoneFocus,
-            })}
-          >
-            <InputGroupAddon addonType="prepend">
-              <InputGroupText>
-                <i className="tim-icons icon-mobile" />
-              </InputGroupText>
-            </InputGroupAddon>
+          <InputGroup>
+            <InputGroup.Text>
+              <i className="tim-icons icon-mobile" />
+            </InputGroup.Text>
             <Input
               name="number"
               placeholder="Phone..."
@@ -235,16 +210,10 @@ const Step1 = React.forwardRef((props, ref) => {
           </InputGroup>
         </Col>
         <Col sm="10">
-          <InputGroup
-            className={classnames({
-              "input-group-focus": addressFocus,
-            })}
-          >
-            <InputGroupAddon addonType="prepend">
-              <InputGroupText>
-                <i className="tim-icons icon-square-pin" />
-              </InputGroupText>
-            </InputGroupAddon>
+          <InputGroup>
+            <InputGroup.Text>
+              <i className="tim-icons icon-square-pin" />
+            </InputGroup.Text>
             <Input
               name="address"
               placeholder="Address"

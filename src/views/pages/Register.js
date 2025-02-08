@@ -29,9 +29,8 @@ import {
   FormGroup,
   Form,
   Input,
-  InputGroupAddon,
-  InputGroupText,
   InputGroup,
+  InputGroupText,
   Container,
   Row,
   Col,
@@ -104,55 +103,59 @@ const Register = () => {
                         "input-group-focus": state.nameFocus,
                       })}
                     >
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
+                      <InputGroup
+                        className={classnames({
+                          "input-group-focus": state.nameFocus,
+                        })}
+                      >
+                        <InputGroup.Text>
                           <i className="tim-icons icon-single-02" />
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input
-                        placeholder="Full Name"
-                        type="text"
-                        onFocus={(e) => setState({ ...state, nameFocus: true })}
-                        onBlur={(e) => setState({ ...state, nameFocus: false })}
-                      />
+                        </InputGroup.Text>
+                        <Input
+                          placeholder="Full Name"
+                          type="text"
+                          onFocus={(e) => setState({ ...state, nameFocus: true })}
+                          onBlur={(e) => setState({ ...state, nameFocus: false })}
+                        />
+                      </InputGroup>
                     </InputGroup>
                     <InputGroup
                       className={classnames({
                         "input-group-focus": state.emailFocus,
                       })}
                     >
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
+                      <InputGroup>
+                        <InputGroup.Text>
                           <i className="tim-icons icon-email-85" />
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input
-                        placeholder="Email"
-                        type="text"
-                        onFocus={(e) =>
-                          setState({ ...state, emailFocus: true })
-                        }
-                        onBlur={(e) =>
-                          setState({ ...state, emailFocus: false })
-                        }
-                      />
+                        </InputGroup.Text>
+                        <Input
+                          placeholder="Email"
+                          type="text"
+                          onFocus={(e) =>
+                            setState({ ...state, emailFocus: true })
+                          }
+                          onBlur={(e) =>
+                            setState({ ...state, emailFocus: false })
+                          }
+                        />
+                      </InputGroup>
                     </InputGroup>
                     <InputGroup
                       className={classnames({
                         "input-group-focus": state.passFocus,
                       })}
                     >
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
+                      <InputGroup>
+                        <InputGroup.Text>
                           <i className="tim-icons icon-lock-circle" />
-                        </InputGroupText>
-                      </InputGroupAddon>
-                      <Input
-                        placeholder="Password"
-                        type="text"
-                        onFocus={(e) => setState({ ...state, passFocus: true })}
-                        onBlur={(e) => setState({ ...state, passFocus: false })}
-                      />
+                        </InputGroup.Text>
+                        <Input
+                          placeholder="Password"
+                          type="text"
+                          onFocus={(e) => setState({ ...state, passFocus: true })}
+                          onBlur={(e) => setState({ ...state, passFocus: false })}
+                        />
+                      </InputGroup>
                     </InputGroup>
                     <FormGroup check className="text-left">
                       <Label check>

@@ -25,9 +25,8 @@ import {
   CardFooter,
   CardTitle,
   Input,
-  InputGroupAddon,
-  InputGroupText,
   InputGroup,
+  InputGroupText,
   Container,
   Col,
 } from "reactstrap";
@@ -56,11 +55,9 @@ const Lock = () => {
                     "input-group-focus": state.passFocus,
                   })}
                 >
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="tim-icons icon-key-25" />
-                    </InputGroupText>
-                  </InputGroupAddon>
+                  <InputGroup.Text>
+                    <i className="tim-icons icon-lock-circle" />
+                  </InputGroup.Text>
                   <Input
                     placeholder="Password"
                     type="text"

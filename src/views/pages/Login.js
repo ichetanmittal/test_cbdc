@@ -26,9 +26,8 @@ import {
   CardTitle,
   Form,
   Input,
-  InputGroupAddon,
-  InputGroupText,
   InputGroup,
+  InputGroupText,
   Container,
   Col,
 } from "reactstrap";
@@ -58,11 +57,9 @@ const Login = () => {
                       "input-group-focus": state.emailFocus,
                     })}
                   >
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="tim-icons icon-email-85" />
-                      </InputGroupText>
-                    </InputGroupAddon>
+                    <InputGroup.Text>
+                      <i className="tim-icons icon-email-85" />
+                    </InputGroup.Text>
                     <Input
                       placeholder="Email"
                       type="text"
@@ -75,11 +72,9 @@ const Login = () => {
                       "input-group-focus": state.passFocus,
                     })}
                   >
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="tim-icons icon-lock-circle" />
-                      </InputGroupText>
-                    </InputGroupAddon>
+                    <InputGroup.Text>
+                      <i className="tim-icons icon-lock-circle" />
+                    </InputGroup.Text>
                     <Input
                       placeholder="Password"
                       type="text"

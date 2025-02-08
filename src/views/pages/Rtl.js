@@ -33,7 +33,6 @@ import {
   Label,
   FormGroup,
   Input,
-  CustomInput,
   ListGroupItem,
   ListGroup,
   Table,
@@ -335,7 +334,7 @@ const Rtl = () => {
                     <div className="card-stats justify-content-center">
                       <div className="d-flex justify-content-center align-items-center">
                         <span className="ml-n4 mt-3">على</span>
-                        <CustomInput
+                        <Input
                           type="switch"
                           id="switch-1"
                           defaultChecked
@@ -349,7 +348,10 @@ const Rtl = () => {
                     <div className="card-stats justify-content-center">
                       <div className="d-flex justify-content-center align-items-center">
                         <span className="ml-n4 mt-3">على</span>
-                        <CustomInput type="switch" id="switch-2" />
+                        <Input
+                          type="switch"
+                          id="switch-2"
+                        />
                         <span className="mr-3 mt-3">إيقاف</span>
                       </div>
                       <span>مساهمات الأسبوع الماضي</span>

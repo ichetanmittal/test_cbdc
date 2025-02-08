@@ -14,13 +14,52 @@
 
  */
 
+// At the top of the file, before other imports:
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Then your custom variables
+@import "black-dashboard-pro-react/custom/variables";
+
+// Then the rest of bootstrap
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/input-group";
+@import "bootstrap/scss/custom-forms";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/jumbotron";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/media";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/print";
+
 // Core
 
 @import "black-dashboard-pro-react/custom/functions";
 @import "../../../node_modules/bootstrap/scss/functions";
-
-@import "black-dashboard-pro-react/custom/variables";
-@import "../../../node_modules/bootstrap/scss/variables";
 
 @import "black-dashboard-pro-react/custom/mixins";
 @import "../../../node_modules/bootstrap/scss/mixins";
@@ -143,3 +182,7 @@
 
 // React Differences
 @import "black-dashboard-pro-react/react/react-differences";
+
+// Add this after your forms import
+@import "black-dashboard-pro-react/custom/forms";
+@import "black-dashboard-pro-react/custom/forms-extend";

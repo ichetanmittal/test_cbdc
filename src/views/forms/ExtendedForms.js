@@ -34,7 +34,7 @@ import {
   UncontrolledDropdown,
   FormGroup,
   Progress,
-  CustomInput,
+  Input,
   Row,
   Col,
 } from "reactstrap";
@@ -145,9 +145,9 @@ const ExtendedForms = () => {
                     <Row className="mb-3">
                       <Col md="4">
                         <p className="category">Default</p>
-                        <CustomInput type="switch" id="switch-1" />
+                        <Input type="switch" id="switch-1" />
                         <br />
-                        <CustomInput
+                        <Input
                           type="switch"
                           id="switch-2"
                           defaultChecked
@@ -155,13 +155,13 @@ const ExtendedForms = () => {
                       </Col>
                       <Col md="4">
                         <p className="category">With label</p>
-                        <CustomInput
+                        <Input
                           type="switch"
                           id="switch-3"
                           label="Nice label here"
                         />
                         <br />
-                        <CustomInput
+                        <Input
                           type="switch"
                           id="switch-4"
                           label="Better label here"
@@ -172,7 +172,7 @@ const ExtendedForms = () => {
                         <p className="category">With Text</p>
                         <div className="d-flex align-items-center">
                           <span className="mr-2">Left text</span>
-                          <CustomInput
+                          <Input
                             type="switch"
                             id="switch-5"
                             className="mt-n4"
@@ -182,7 +182,7 @@ const ExtendedForms = () => {
                         <br />
                         <div className="d-flex align-items-center">
                           <span className="mr-2">Left text</span>
-                          <CustomInput
+                          <Input
                             type="switch"
                             id="switch-6"
                             className="mt-n4"
