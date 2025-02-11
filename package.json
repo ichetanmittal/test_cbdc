@@ -22,7 +22,7 @@
     "moment": "2.30.1",
     "nouislider": "15.8.1",
     "perfect-scrollbar": "1.5.5",
-    "postcss": "8.4.41",
+    "postcss": "^8.4.31",
     "prop-types": "15.8.1",
     "react": "18.3.1",
     "react-big-calendar": "1.13.2",
@@ -59,6 +59,15 @@
   ],
   "overrides": {
     "svgo": "3.0.2",
-    "@react-jvectormap/core": "1.0.4"
+    "@react-jvectormap/core": "1.0.4",
+    "resolve-url-loader": {
+      "postcss": "^8.4.31"
+    },
+    "postcss": "^8.4.31"
+  },
+  "resolutions": {
+    "postcss": "^8.4.31",
+    "**/postcss": "^8.4.31",
+    "resolve-url-loader/postcss": "^8.4.31"
   }
 }
