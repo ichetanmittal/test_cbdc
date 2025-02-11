@@ -189,15 +189,14 @@
     }
 }
 
-@mixin button-variant($background, $border, $hover-background: darken($background, 0%), $hover-border: darken($border, 0%), $active-background: darken($background, 10%), $active-border: darken($border, 0%)) {
-    color: color-yiq($background);
-    @include gradient-bg($background);
+@mixin button-variant($background, $border, $hover-background: darken($background, 7.5%), $hover-border: darken($border, 10%)) {
+    color: color-contrast($background);
+    background-color: $background;
     border-color: $border;
-    @include box-shadow($btn-box-shadow);
 
-    @include hover {
-        color: color-yiq($hover-background);
-        @include gradient-bg($hover-background);
+    &:hover {
+        color: color-contrast($hover-background);
+        background-color: $hover-background;
         border-color: $hover-border;
     }
 

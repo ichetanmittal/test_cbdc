@@ -1,18 +1,33 @@
 // Contextual backgrounds
-@mixin bg-variant($parent, $color, $ignore-warning: true) {
+@mixin bg-variant($parent, $color) {
     #{$parent} {
         background-color: $color !important;
     }
-    a#{$parent},
-    button#{$parent} {
-        @include hover-focus {
-            background-color: darken($color, 10%) !important;
-        }
+    
+    // Use Bootstrap 5's hover-focus-active mixin
+    @include hover-focus-active() {
+        background-color: darken($color, 10%) !important;
     }
 }
 
-@mixin bg-gradient-variant($parent, $color, $ignore-warning: true) {
+// Add hover focus mixin if needed
+@mixin hover-focus-active {
+    &:hover,
+    &:focus,
+    &:active {
+        @content;
+    }
+}
+
+@mixin bg-gradient-variant($parent, $color) {
     #{$parent} {
         background: linear-gradient(87deg, $color 0, adjust-hue($color, 25%) 100%) !important;
+    }
+}
+
+// Optional: Add other background-related mixins here
+@mixin bg-translucent-variant($parent, $color) {
+    #{$parent} {
+        background: rgba($color, $opacity-8) !important;
     }
 }

@@ -1,4 +1,3 @@
-
 @mixin transform-translate-x($value){
      -webkit-transform:  translate3d($value, 0, 0);
         -moz-transform: translate3d($value, 0, 0);
@@ -15,12 +14,29 @@
         transform: translate3d(0,$value,0);
 }
 
-@mixin transitions($time, $type){
+@mixin transition($time, $type) {
     -webkit-transition: all $time $type;
     -moz-transition: all $time $type;
     -o-transition: all $time $type;
     -ms-transition: all $time $type;
     transition: all $time $type;
+}
+
+@mixin transition-opacity($time, $type) {
+    -webkit-transition: opacity $time $type;
+    -moz-transition: opacity $time $type;
+    -o-transition: opacity $time $type;
+    -ms-transition: opacity $time $type;
+    transition: opacity $time $type;
+}
+
+// Bootstrap 5 style transitions
+@mixin transition-base {
+    transition: $transition-base;
+}
+
+@mixin transition-fade {
+    transition: $transition-fade;
 }
 
 @mixin diagonal-gradient($start-color, $end-color){

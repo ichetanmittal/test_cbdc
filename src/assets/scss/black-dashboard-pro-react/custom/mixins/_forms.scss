@@ -28,14 +28,14 @@
     top: 100%;
     z-index: 5;
     display: none;
-    max-width: 100%; // Contain to parent when possible
-    padding: .5rem;
+    max-width: 100%;
+    padding: $form-feedback-tooltip-padding-y $form-feedback-tooltip-padding-x;
     margin-top: .1rem;
-    font-size: .875rem;
-    line-height: 1;
-    color: $white;
-    background-color: rgba($color, .8);
-    border-radius: .2rem;
+    font-size: $form-feedback-tooltip-font-size;
+    line-height: $form-feedback-tooltip-line-height;
+    color: color-contrast($color);
+    background-color: rgba($color, $form-feedback-tooltip-opacity);
+    @include border-radius($form-feedback-tooltip-border-radius);
   }
 
   .form-control,
