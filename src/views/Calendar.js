@@ -76,7 +76,7 @@ const Calendar = () => {
       <div className="content">
         {alert}
         <Row>
-          <Col className="ml-auto mr-auto" md="10">
+          <Col className="ms-auto me-auto" md="10">
             <Card className="card-calendar">
               <CardBody>
                 <BigCalendar

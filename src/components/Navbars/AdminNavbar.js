@@ -118,8 +118,8 @@ const AdminNavbar = (props) => {
           <button
             className="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navigation"
+            data-bs-toggle="collapse"
+            data-bs-target="#navigation"
             aria-expanded="false"
             aria-label="Toggle navigation"
             onClick={toggleCollapse}
@@ -129,12 +129,12 @@ const AdminNavbar = (props) => {
             <span className="navbar-toggler-bar navbar-kebab" />
           </button>
           <Collapse navbar isOpen={collapseOpen}>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ms-auto" navbar>
               <InputGroup className="search-bar" tag="li">
                 <Button
                   color="link"
-                  data-target="#searchModal"
-                  data-toggle="modal"
+                  data-bs-target="#searchModal"
+                  data-bs-toggle="modal"
                   id="search-button"
                   onClick={toggleModalSearch}
                 >
@@ -146,7 +146,7 @@ const AdminNavbar = (props) => {
                 <DropdownToggle
                   caret
                   color="default"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   nav
                 >
                   <div className="notification d-none d-lg-block d-xl-block" />
@@ -185,7 +185,7 @@ const AdminNavbar = (props) => {
                 <DropdownToggle
                   caret
                   color="default"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   nav
                   onClick={(e) => e.preventDefault()}
                 >
@@ -223,7 +223,7 @@ const AdminNavbar = (props) => {
           <button
             aria-label="Close"
             className="close"
-            data-dismiss="modal"
+            data-bs-dismiss="modal"
             type="button"
             onClick={toggleModalSearch}
           >

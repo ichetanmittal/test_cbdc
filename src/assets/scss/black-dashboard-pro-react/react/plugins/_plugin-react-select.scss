@@ -33,8 +33,8 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
     &:before {
       border-bottom: 11px solid #f1eae0;
       top: -11px;
-      border-left: 11px solid transparent;
-      border-right: 11px solid transparent;
+      border-start: 11px solid transparent;
+      border-end: 11px solid transparent;
       content: "";
       display: inline-block;
       position: absolute;
@@ -44,8 +44,8 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
     &:after {
       top: -10px;
       border-bottom: 11px solid #fffcf5;
-      border-left: 11px solid transparent;
-      border-right: 11px solid transparent;
+      border-start: 11px solid transparent;
+      border-end: 11px solid transparent;
       content: "";
       display: inline-block;
       position: absolute;
@@ -127,7 +127,7 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
       }
       &,
       &:hover {
-        border: 1px solid $primary;
+        border: 1px solid $blue;
         box-shadow: none;
       }
     }
@@ -142,7 +142,7 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
       }
       .react-select__single-value {
         top: 48%;
-        color: $primary;
+        color: $blue;
       }
     }
     .react-select__placeholder {
@@ -211,23 +211,23 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
       &.react-select__control--is-focused {
         &,
         &:hover {
-          border-color: $primary;
+          border-color: $blue;
         }
       }
       .react-select__value-container--has-value {
         .react-select__single-value,
         .react-select__multi-value__label {
-          color: $primary;
+          color: $blue;
         }
       }
     }
     .react-select__multi-value {
-      border: 1px solid $primary;
+      border: 1px solid $blue;
       .react-select__multi-value__remove {
-        color: $primary-opacity;
-        border-left: 1px solid $primary-opacity;
+        color: $blue-opacity;
+        border-start: 1px solid $blue-opacity;
         &:hover {
-          color: $primary;
+          color: $blue;
           background-color: transparent;
         }
       }
@@ -238,23 +238,23 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
       &.react-select__control--is-focused {
         &,
         &:hover {
-          border-color: $success;
+          border-color: $green;
         }
       }
       .react-select__value-container--has-value {
         .react-select__single-value,
         .react-select__multi-value__label {
-          color: $success;
+          color: $green;
         }
       }
     }
     .react-select__multi-value {
-      border: 1px solid $success;
+      border: 1px solid $green;
       .react-select__multi-value__remove {
-        color: $success-opacity;
-        border-left: 1px solid $success-opacity;
+        color: $green-opacity;
+        border-start: 1px solid $green-opacity;
         &:hover {
-          color: $success;
+          color: $green;
           background-color: transparent;
         }
       }
@@ -265,23 +265,23 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
       &.react-select__control--is-focused {
         &,
         &:hover {
-          border-color: $info;
+          border-color: $cyan;
         }
       }
       .react-select__value-container--has-value {
         .react-select__single-value,
         .react-select__multi-value__label {
-          color: $info;
+          color: $cyan;
         }
       }
     }
     .react-select__multi-value {
-      border: 1px solid $info;
+      border: 1px solid $cyan;
       .react-select__multi-value__remove {
-        color: $info-opacity;
-        border-left: 1px solid $info-opacity;
+        color: $cyan-opacity;
+        border-start: 1px solid $cyan-opacity;
         &:hover {
-          color: $info;
+          color: $cyan;
           background-color: transparent;
         }
       }
@@ -292,23 +292,23 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
       &.react-select__control--is-focused {
         &,
         &:hover {
-          border-color: $warning;
+          border-color: $yellow;
         }
       }
       .react-select__value-container--has-value {
         .react-select__single-value,
         .react-select__multi-value__label {
-          color: $warning;
+          color: $yellow;
         }
       }
     }
     .react-select__multi-value {
-      border: 1px solid $warning;
+      border: 1px solid $yellow;
       .react-select__multi-value__remove {
-        color: $warning-opacity;
-        border-left: 1px solid $warning-opacity;
+        color: $yellow-opacity;
+        border-start: 1px solid $yellow-opacity;
         &:hover {
-          color: $warning;
+          color: $yellow;
           background-color: transparent;
         }
       }
@@ -319,23 +319,23 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
       &.react-select__control--is-focused {
         &,
         &:hover {
-          border-color: $danger;
+          border-color: $red;
         }
       }
       .react-select__value-container--has-value {
         .react-select__single-value,
         .react-select__multi-value__label {
-          color: $danger;
+          color: $red;
         }
       }
     }
     .react-select__multi-value {
-      border: 1px solid $danger;
+      border: 1px solid $red;
       .react-select__multi-value__remove {
-        color: $danger-opacity;
-        border-left: 1px solid $danger-opacity;
+        color: $red-opacity;
+        border-start: 1px solid $red-opacity;
         &:hover {
-          color: $danger;
+          color: $red;
           background-color: transparent;
         }
       }
@@ -346,7 +346,7 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
     .react-select__multi-value__remove {
       position: relative;
       color: $opacity-gray-8;
-      border-left: 1px solid $opacity-gray-8;
+      border-start: 1px solid $opacity-gray-8;
       &:hover {
         color: $dark-gray;
         background-color: transparent;
@@ -379,14 +379,14 @@ This file was modified entirely by Creative Tim for React-Select v2.0.0
   .react-select__control {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-left: 0;
+    border-start: 0;
   }
 }
 .input-group .react-select:not(:last-child) {
   .react-select__control {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-right: 0;
+    border-end: 0;
     right: -1px;
   }
 }

@@ -4,10 +4,10 @@
   }
   .navbar:not(.bg-white) {
     .dropdown.show .dropdown-menu .dropdown-item {
-      color: $opacity-8;
+      color: rgba($white, 0.8);
     }
     .navbar-nav .btn span {
-      color: $opacity-8 !important;
+      color: rgba($white, 0.8) !important;
     }
   }
   nav.navbar {
@@ -40,5 +40,5 @@
   }
 }
 .nav-link:hover {
-  color: $info;
+  color: $cyan;
 }

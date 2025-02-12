@@ -23,7 +23,7 @@
 
   &.bs-popover-right {
     .arrow::after {
-      border-right-color: $background;
+      border-end-color: $background;
     }
   }
 
@@ -35,7 +35,7 @@
 
   &.bs-popover-left {
     .arrow::after {
-      border-left-color: $background;
+      border-start-color: $background;
     }
   }
 }

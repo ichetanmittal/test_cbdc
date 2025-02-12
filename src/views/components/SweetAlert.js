@@ -230,7 +230,7 @@ const SweetAlert = () => {
             </a>
           </p>
           <Row className="mt-5">
-            <Col className="ml-auto" md="3">
+            <Col className="ms-auto" md="3">
               <Card>
                 <CardBody className="text-center">
                   <CardText>Basic example</CardText>
@@ -244,7 +244,7 @@ const SweetAlert = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col className="mr-auto" md="3">
+            <Col className="me-auto" md="3">
               <Card>
                 <CardBody className="text-center">
                   <CardText>A success message</CardText>
@@ -258,7 +258,7 @@ const SweetAlert = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col className="ml-auto" md="3">
+            <Col className="ms-auto" md="3">
               <Card>
                 <CardBody className="text-center">
                   <CardText>Custom HTML description</CardText>
@@ -268,7 +268,7 @@ const SweetAlert = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col className="mr-auto" md="3">
+            <Col className="me-auto" md="3">
               <Card>
                 <CardBody className="text-center">
                   <CardText>
@@ -287,7 +287,7 @@ const SweetAlert = () => {
             </Col>
           </Row>
           <Row>
-            <Col className="ml-auto" md="3">
+            <Col className="ms-auto" md="3">
               <Card>
                 <CardBody className="text-center">
                   <CardText>Modal window with input field</CardText>
@@ -301,7 +301,7 @@ const SweetAlert = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col className="mr-auto" md="3">
+            <Col className="me-auto" md="3">
               <Card>
                 <CardBody className="text-center">
                   <CardText>A title with a text under</CardText>
@@ -315,7 +315,7 @@ const SweetAlert = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col className="ml-auto" md="3">
+            <Col className="ms-auto" md="3">
               <Card>
                 <CardBody className="text-center">
                   <CardText>
@@ -331,7 +331,7 @@ const SweetAlert = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col className="mr-auto" md="3">
+            <Col className="me-auto" md="3">
               <Card>
                 <CardBody className="text-center">
                   <CardText>

@@ -31,7 +31,7 @@
   }
 }
 
-.sidebar .nav li.active > a[data-toggle="collapse"] + div .nav li:not(.active) a{
+.sidebar .nav li.active > a[data-bs-toggle="collapse"] + div .nav li:not(.active) a{
   .sidebar-normal {
     color: rgba($white,0.8);
   }

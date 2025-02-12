@@ -92,8 +92,8 @@
     content: "";
     right: auto;
     border-bottom: .4em solid;
-    border-right: .4em solid transparent;
-    border-left: .4em solid transparent;
+    border-end: .4em solid transparent;
+    border-start: .4em solid transparent;
 
 
 }
@@ -115,8 +115,8 @@
     left: 10px;
     color: $white;
     border-top: .4em solid;
-    border-right: .4em solid transparent;
-    border-left: .4em solid transparent;
+    border-end: .4em solid transparent;
+    border-start: .4em solid transparent;
 }
 .bootstrap-datetimepicker-widget.dropdown-menu.top {
   margin-top: auto;
@@ -145,7 +145,7 @@
 }
 .bootstrap-datetimepicker-widget a[data-action="togglePicker"],
 .bootstrap-datetimepicker-widget a[data-action="togglePicker"]:hover {
-    color: $primary;
+    color: $blue;
 }
 .bootstrap-datetimepicker-widget a[data-action]:hover {
   background-color: transparent;
@@ -205,7 +205,7 @@
 .bootstrap-datetimepicker-widget .picker-switch {
   text-align: center;
   border-radius: 3px;
-  color: $primary;
+  color: $blue;
 }
 .bootstrap-datetimepicker-widget .picker-switch::after {
   content: "Toggle Date and Time Screens";
@@ -254,7 +254,7 @@
   font-size: 12px;
   border-radius: 50%;
   text-align: center;
-  color: $primary;
+  color: $blue;
 }
 .bootstrap-datetimepicker-widget table th.prev::after {
   content: "Previous Month";
@@ -264,7 +264,7 @@
 }
 .bootstrap-datetimepicker-widget table th.dow {
   text-align: center;
-  color: $primary;
+  color: $blue;
   padding-bottom: 5px;
   padding-top: 10px;
 }
@@ -305,7 +305,7 @@
   cursor: pointer;
 }
 .bootstrap-datetimepicker-widget table td.old > div, .bootstrap-datetimepicker-widget table td.new > div {
-  color: $default;
+  color: $gray-600;
 }
 .bootstrap-datetimepicker-widget table td.today > div:before {
   content: '';
@@ -318,7 +318,7 @@
   right: 4px;
 }
 .bootstrap-datetimepicker-widget table td.active > div, .bootstrap-datetimepicker-widget table td.active:hover > div {
-  background-color: $primary;
+  background-color: $blue;
   color: $white;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
@@ -342,7 +342,7 @@
 }
 
 .bootstrap-datetimepicker-widget table td span.active {
-  background-color: $primary;
+  background-color: $blue;
   color: #FFFFFF;
 }
 .bootstrap-datetimepicker-widget table td span.old {
@@ -398,7 +398,7 @@ input.datetimepicker[data-color] + .bootstrap-datetimepicker-widget{
 
 
     table th.dow{
-        color: $opacity-8;
+        color: rgba($white, 0.8);
     }
 
     table td.old > div,
@@ -420,73 +420,73 @@ input.datetimepicker[data-color] + .bootstrap-datetimepicker-widget{
     table td.minute:hover > div,
     table td.second:hover > div,
     table td span:hover{
-        background: $opacity-2;
+        background: rgba($white, 0.2);
     }
 
     table thead tr:first-child th:hover span,
     table thead tr:first-child th.picker-switch:hover{
-        background-color: $opacity-2;
+        background-color: rgba($white, 0.2);
     }
 }
 
 
 input.datetimepicker[data-color="orange"] + .bootstrap-datetimepicker-widget{
-    background-color: $primary;
+    background-color: $blue;
 
     table td.active > div,
     table td.active:hover > div,
     button[data-action],
     &.dropdown-menu.top:after,
     &.dropdown-menu.bottom:before{
-        color: $primary;
+        color: $blue;
     }
 }
 
 input.datetimepicker[data-color="blue"] + .bootstrap-datetimepicker-widget{
-    background-color: $info;
+    background-color: $cyan;
 
     table td.active > div,
     table td.active:hover > div,
     button[data-action],
     &.dropdown-menu.top:after,
     &.dropdown-menu.bottom:before{
-        color: $info;
+        color: $cyan;
     }
 }
 
 input.datetimepicker[data-color="green"] + .bootstrap-datetimepicker-widget{
-    background-color: $success;
+    background-color: $green;
 
     table td.active > div,
     table td.active:hover > div,
     button[data-action],
     &.dropdown-menu.top:after,
     &.dropdown-menu.bottom:before{
-        color: $success;
+        color: $green;
     }
 }
 
 input.datetimepicker[data-color="red"] + .bootstrap-datetimepicker-widget{
-    background-color: $danger;
+    background-color: $red;
 
     table td.active > div,
     table td.active:hover > div,
     button[data-action],
     &.dropdown-menu.top:after,
     &.dropdown-menu.bottom:before{
-        color: $danger;
+        color: $red;
     }
 }
 
 input.datetimepicker[data-color="yellow"] + .bootstrap-datetimepicker-widget{
-    background-color: $warning;
+    background-color: $yellow;
 
     table td.active > div,
     table td.active:hover > div,
     button[data-action],
     &.dropdown-menu.top:after,
     &.dropdown-menu.bottom:before{
-        color: $warning;
+        color: $yellow;
     }
 }
 

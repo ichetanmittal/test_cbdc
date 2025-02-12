@@ -11,7 +11,7 @@
      height: 50px;
      width: 50px;
      border-radius: 50%;
-     @include diagonal-gradient($primary,$primary-states);
+     @include diagonal-gradient($blue,$blue-states);
 
      i {
        color: $white;
@@ -21,23 +21,23 @@
      }
 
      &.icon-danger {
-       @include diagonal-gradient($danger,$danger-states);
+       @include diagonal-gradient($red,$red-states);
      }
 
      &.icon-warning {
-       @include diagonal-gradient($warning,$warning-states);
+       @include diagonal-gradient($yellow,$yellow-states);
      }
 
      &.icon-success {
-       @include diagonal-gradient($success,$success-states);
+       @include diagonal-gradient($green,$green-states);
      }
 
      &.icon-info {
-       @include diagonal-gradient($info,$info-states);
+       @include diagonal-gradient($cyan,$cyan-states);
      }
 
      &.icon-primary {
-       @include diagonal-gradient($primary,$primary-states);
+       @include diagonal-gradient($blue,$blue-states);
      }
    }
 

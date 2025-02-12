@@ -25,7 +25,7 @@
       .card-title{
         color: $white;
         text-transform: inherit;
-        font-weight: $font-weight-light;
+        font-weight: $fw-light;
         margin-bottom: .75rem;
       }
 
@@ -78,7 +78,7 @@
       @include form-control-placeholder(rgba($black,0.4), 1);
         .has-danger{
           .form-control, .input-group-prepend .input-group-text{
-            border-color: $danger-states;
+            border-color: $red-states;
           }
         }
 
@@ -91,11 +91,11 @@
           color: $black;
           border-color: rgba($black-states,0.2);
           &:focus{
-            border-color: $primary;
+            border-color: $blue;
           }
         }
         label:not(.btn){
-          color: $default;
+          color: $gray-600;
         }
 
       .form-group.no-border,
@@ -117,7 +117,7 @@
               &:focus {
                   & + .input-group-prepend .input-group-text,
                   & + .input-group-append .input-group-text{
-                    background-color: $transparent-bg;
+                    background-color: transparent;
                   }
               }
           }
@@ -142,7 +142,7 @@
           .input-group-append .input-group-text,
           .form-control{
             background-color: $white;
-            border-color: $primary;
+            border-color: $blue;
           }
 
           &.no-border{
@@ -154,19 +154,19 @@
           }
       }
       .input-group-prepend .input-group-text {
-          border-right: none;
+          border-end: none;
       }
 
       .input-group-append .input-group-text {
-          border-left: none;
+          border-start: none;
       }
 
       .has-danger .form-control:focus, .has-success.input-group-focus .input-group-append .input-group-text, .has-success.input-group-focus .input-group-prepend .input-group-text {
-        border-color: $danger-states;
+        border-color: $red-states;
       }
 
       .has-success .form-control:focus, .has-success.input-group-focus .input-group-append .input-group-text, .has-success.input-group-focus .input-group-prepend .input-group-text {
-        border-color: darken($success, 10%);
+        border-color: darken($green, 10%);
       }
     }
 

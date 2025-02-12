@@ -79,23 +79,23 @@
   }
 
   &.bg-primary {
-    background-color: $primary !important;
+    background-color: $blue !important;
   }
 
   &.bg-warning {
-    background-color: $warning !important;
+    background-color: $yellow !important;
   }
 
   &.bg-info {
-    background-color: $info !important;
+    background-color: $cyan !important;
   }
 
   &.bg-success {
-    background-color: darken($success, 10%) !important;
+    background-color: darken($green, 10%) !important;
   }
 
   &.bg-danger {
-    background-color: $danger !important;
+    background-color: $red !important;
   }
 
   .navbar-brand {
@@ -131,7 +131,7 @@
 }
 
 .notification {
-  background: $danger;
+  background: $red;
 	color: $white;
 	border-radius: $border-radius-xl;
 	height: 6px;
@@ -142,7 +142,7 @@
 	font-weight: 800;
   top: 10px;
   right: 10px;
-	border: 1px solid $danger;
+	border: 1px solid $red;
 }
 
 .navbar-nav li{
@@ -265,7 +265,7 @@
 
       &.bg-white .dropdown-menu .dropdown-item:focus,
       &.bg-white .dropdown-menu .dropdown-item:hover{
-          color: $default;
+          color: $gray-600;
       }
 
       .navbar-toggler-bar{
@@ -298,7 +298,7 @@
       }
 
       &.bg-white:not(.navbar-transparent) .navbar-toggler-bar{
-          background-color: $default;
+          background-color: $gray-600;
       }
 
       & .toggled .navbar-toggler-bar{

@@ -44,7 +44,7 @@ const Pricing = () => {
       <div className="content">
         <Container>
           <Row>
-            <Col className="ml-auto mr-auto text-center" md="6">
+            <Col className="ms-auto me-auto text-center" md="6">
               <h1 className="title">Pick the best plan for you</h1>
               <h4 className="description">
                 You have Free Unlimited Updates and Premium Support on each
@@ -181,7 +181,7 @@ const Pricing = () => {
                 product ...
               </p>
             </Col>
-            <Col className="ml-auto" md="6">
+            <Col className="ms-auto" md="6">
               <div className="progress-container progress-warning">
                 <span className="progress-badge">500GB</span>
                 <Progress max="100" value="75" />

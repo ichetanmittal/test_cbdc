@@ -73,21 +73,21 @@
       }
     }
 
-    @include badge-variant($default);
+    @include badge-variant($gray-600);
     &.primary {
-      @include badge-variant($primary);
+      @include badge-variant($blue);
     }
     &.info {
-      @include badge-variant($info);
+      @include badge-variant($cyan);
     }
     &.success {
-      @include badge-variant($success);
+      @include badge-variant($green);
     }
     &.warning {
-      @include badge-variant($warning);
+      @include badge-variant($yellow);
     }
     &.danger {
-      @include badge-variant($danger);
+      @include badge-variant($red);
     }
     &.neutral {
       @include badge-variant($white);

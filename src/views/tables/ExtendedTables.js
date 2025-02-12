@@ -44,7 +44,7 @@ const ExtendedTables = () => {
     <>
       <div className="content">
         <Row>
-          <ol className="breadcrumb bg-transparent ml-3">
+          <ol className="breadcrumb bg-transparent ms-3">
             <BreadcrumbItem>
               <a href="#pablo" onClick={(e) => e.preventDefault()}>
                 Home
@@ -61,13 +61,13 @@ const ExtendedTables = () => {
           <Col md="12">
             <Card>
               <CardHeader>
-                <div className="tools float-right">
+                <div className="tools float-end">
                   <UncontrolledDropdown>
                     <DropdownToggle
                       caret
                       className="btn-link btn-icon"
                       color="default"
-                      data-toggle="dropdown"
+                      data-bs-toggle="dropdown"
                       type="button"
                     >
                       <i className="tim-icons icon-settings-gear-63" />
@@ -111,8 +111,8 @@ const ExtendedTables = () => {
                       <th>Name</th>
                       <th>Job Position</th>
                       <th className="text-center">Since</th>
-                      <th className="text-right">Salary</th>
-                      <th className="text-right">Actions</th>
+                      <th className="text-end">Salary</th>
+                      <th className="text-end">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -128,8 +128,8 @@ const ExtendedTables = () => {
                       <td>Andrew Mike</td>
                       <td>Develop</td>
                       <td className="text-center">2013</td>
-                      <td className="text-right">€ 99,225</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 99,225</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon"
                           color="success"
@@ -169,8 +169,8 @@ const ExtendedTables = () => {
                       <td>John Doe</td>
                       <td>Design</td>
                       <td className="text-center">2012</td>
-                      <td className="text-right">€ 89,241</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 89,241</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon"
                           color="success"
@@ -210,8 +210,8 @@ const ExtendedTables = () => {
                       <td>Alex Mike</td>
                       <td>Design</td>
                       <td className="text-center">2010</td>
-                      <td className="text-right">€ 92,144</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 92,144</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon"
                           color="success"
@@ -251,8 +251,8 @@ const ExtendedTables = () => {
                       <td>Mike Monday</td>
                       <td>Marketing</td>
                       <td className="text-center">2013</td>
-                      <td className="text-right">€ 49,990</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 49,990</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon btn-neutral"
                           color="success"
@@ -292,8 +292,8 @@ const ExtendedTables = () => {
                       <td>Paul Dickens</td>
                       <td>Communication</td>
                       <td className="text-center">2015</td>
-                      <td className="text-right">€ 69,201</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 69,201</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon btn-neutral"
                           color="success"
@@ -336,8 +336,8 @@ const ExtendedTables = () => {
                       <td>Manuel Rico</td>
                       <td>Manager</td>
                       <td className="text-center">2012</td>
-                      <td className="text-right">€ 99,201</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 99,201</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon btn-neutral"
                           color="success"
@@ -376,13 +376,13 @@ const ExtendedTables = () => {
           <Col md="12">
             <Card>
               <CardHeader>
-                <div className="tools float-right">
+                <div className="tools float-end">
                   <UncontrolledDropdown>
                     <DropdownToggle
                       caret
                       className="btn-link btn-icon"
                       color="default"
-                      data-toggle="dropdown"
+                      data-bs-toggle="dropdown"
                       type="button"
                     >
                       <i className="tim-icons icon-settings-gear-63" />
@@ -427,8 +427,8 @@ const ExtendedTables = () => {
                       <th>Type</th>
                       <th>Milestone</th>
                       <th className="text-center">Qty</th>
-                      <th className="text-right">Price</th>
-                      <th className="text-right">Amount</th>
+                      <th className="text-end">Price</th>
+                      <th className="text-end">Amount</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -452,8 +452,8 @@ const ExtendedTables = () => {
                         </div>
                       </td>
                       <td className="text-center">25</td>
-                      <td className="text-right">€ 49</td>
-                      <td className="text-right">€ 1,225</td>
+                      <td className="text-end">€ 49</td>
+                      <td className="text-end">€ 1,225</td>
                     </tr>
                     <tr>
                       <td className="text-center">
@@ -475,8 +475,8 @@ const ExtendedTables = () => {
                         </div>
                       </td>
                       <td className="text-center">30</td>
-                      <td className="text-right">€ 10</td>
-                      <td className="text-right">€ 300</td>
+                      <td className="text-end">€ 10</td>
+                      <td className="text-end">€ 300</td>
                     </tr>
                     <tr>
                       <td className="text-center">
@@ -498,8 +498,8 @@ const ExtendedTables = () => {
                         </div>
                       </td>
                       <td className="text-center">50</td>
-                      <td className="text-right">€ 10.99</td>
-                      <td className="text-right">€ 109</td>
+                      <td className="text-end">€ 10.99</td>
+                      <td className="text-end">€ 109</td>
                     </tr>
                     <tr>
                       <td className="text-center">
@@ -521,8 +521,8 @@ const ExtendedTables = () => {
                         </div>
                       </td>
                       <td className="text-center">10</td>
-                      <td className="text-right">€ 499.00</td>
-                      <td className="text-right">€ 4,990</td>
+                      <td className="text-end">€ 499.00</td>
+                      <td className="text-end">€ 4,990</td>
                     </tr>
                     <tr>
                       <td className="text-center">
@@ -544,8 +544,8 @@ const ExtendedTables = () => {
                         </div>
                       </td>
                       <td className="text-center">10</td>
-                      <td className="text-right">€ 599.00</td>
-                      <td className="text-right">€ 5,999</td>
+                      <td className="text-end">€ 599.00</td>
+                      <td className="text-end">€ 5,999</td>
                     </tr>
                     <tr>
                       <td colSpan="5" />
@@ -560,13 +560,13 @@ const ExtendedTables = () => {
           <Col md="12">
             <Card>
               <CardHeader>
-                <div className="tools float-right">
+                <div className="tools float-end">
                   <UncontrolledDropdown>
                     <DropdownToggle
                       caret
                       className="btn-link btn-icon"
                       color="default"
-                      data-toggle="dropdown"
+                      data-bs-toggle="dropdown"
                       type="button"
                     >
                       <i className="tim-icons icon-settings-gear-63" />
@@ -591,10 +591,10 @@ const ExtendedTables = () => {
                         <th className="text-center" />
                         <th>Product</th>
                         <th>Color</th>
-                        <th className="text-right">Size</th>
-                        <th className="text-right">Price</th>
-                        <th className="text-right">Qty</th>
-                        <th className="text-right">Amount</th>
+                        <th className="text-end">Size</th>
+                        <th className="text-end">Price</th>
+                        <th className="text-end">Qty</th>
+                        <th className="text-end">Amount</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -792,7 +792,7 @@ const ExtendedTables = () => {
                       </tr>
                     </tbody>
                   </Table>
-                  <Button color="info" className="btn-round float-right mr-5">
+                  <Button color="info" className="btn-round float-end me-5">
                     Complete Purchase{" "}
                     <i className="tim-icons icon-minimal-right" />
                   </Button>

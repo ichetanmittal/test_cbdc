@@ -117,7 +117,7 @@ const FixedPlugin = (props) => {
                 checked={props.sidebarMini}
                 className="mt-n4"
               />
-              <span className="label-switch ml-n3">ON</span>
+              <span className="label-switch ms-n3">ON</span>
             </div>
           </li>
           <li className="adjustments-line">
@@ -131,7 +131,7 @@ const FixedPlugin = (props) => {
                 checked={darkMode}
                 className="mt-n4"
               />
-              <span className="label-switch ml-n3">DARK MODE</span>
+              <span className="label-switch ms-n3">DARK MODE</span>
             </div>
           </li>
           <li className="button-container">

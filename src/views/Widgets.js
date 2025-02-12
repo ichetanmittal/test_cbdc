@@ -48,7 +48,7 @@ const Widgets = () => {
       <div className="content">
         <Row>
           <Col className="text-center" lg="6" sm="6">
-            <Card className="card-tasks text-left">
+            <Card className="card-tasks text-start">
               <CardHeader>
                 <h6 className="title d-inline">Tasks(5)</h6>
                 <p className="card-category d-inline">Today</p>
@@ -57,7 +57,7 @@ const Widgets = () => {
                     caret
                     className="btn-icon"
                     color="link"
-                    data-toggle="dropdown"
+                    data-bs-toggle="dropdown"
                     type="button"
                   >
                     <i className="tim-icons icon-settings-gear-63" />
@@ -105,7 +105,7 @@ const Widgets = () => {
                             Dwuamish Head, Seattle, WA 8:47 AM
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip170482171"
@@ -143,7 +143,7 @@ const Widgets = () => {
                             Alki Ave SW, Seattle, WA 98116, SUA 12:29 PM
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip720626938"
@@ -177,7 +177,7 @@ const Widgets = () => {
                             Capitol Hill, Seattle, WA 12:34 AM
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip598446371"
@@ -211,7 +211,7 @@ const Widgets = () => {
                             Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip797367748"
@@ -245,7 +245,7 @@ const Widgets = () => {
                             Caption Hill, LA 12:34 AM
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip147107903"
@@ -279,7 +279,7 @@ const Widgets = () => {
                             Capitol Hill, Seattle, WA 12:34 AM
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip841399405"
@@ -313,31 +313,31 @@ const Widgets = () => {
               <hr />
               <CardFooter>
                 <Row>
-                  <Col className="ml-auto mr-auto" lg="6" md="8">
+                  <Col className="ms-auto me-auto" lg="6" md="8">
                     <div className="card-stats justify-content-center">
                       <div className="d-flex justify-content-center align-items-center">
-                        <span className="mr-2">Off</span>
+                        <span className="me-2">Off</span>
                         <CustomInput
                           type="switch"
                           id="switch-1"
                           defaultChecked
                           className="mt-n4"
                         />
-                        <span className="ml-n4">On</span>
+                        <span className="ms-n4">On</span>
                       </div>
                       <span>All public contributions</span>
                     </div>
                   </Col>
-                  <Col className="ml-auto mr-auto" lg="6" md="8">
+                  <Col className="ms-auto me-auto" lg="6" md="8">
                     <div className="card-stats justify-content-center">
                       <div className="d-flex justify-content-center align-items-center">
-                        <span className="mr-2">Off</span>
+                        <span className="me-2">Off</span>
                         <CustomInput
                           type="switch"
                           id="switch-2"
                           className="mt-n4"
                         />
-                        <span className="ml-n4">On</span>
+                        <span className="ms-n4">On</span>
                       </div>
                       <span>Past week contributions</span>
                     </div>
@@ -422,7 +422,7 @@ const Widgets = () => {
                             caret
                             className="btn-round"
                             color="info"
-                            data-toggle="dropdown"
+                            data-bs-toggle="dropdown"
                             type="button"
                           >
                             <i className="tim-icons icon-bullet-list-67" />

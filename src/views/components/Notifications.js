@@ -175,7 +175,7 @@ const Notifications = () => {
               <CardBody>
                 <div className="places-buttons">
                   <Row>
-                    <Col className="ml-auto mr-auto text-center" md="6">
+                    <Col className="ms-auto me-auto text-center" md="6">
                       <CardTitle tag="h4">Notifications Places</CardTitle>
                       <p className="category mb-3">
                         Click to view notifications
@@ -183,7 +183,7 @@ const Notifications = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col className="ml-auto mr-auto" lg="8">
+                    <Col className="ms-auto me-auto" lg="8">
                       <Row>
                         <Col md="4">
                           <Button
@@ -216,7 +216,7 @@ const Notifications = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col className="ml-auto mr-auto" lg="8">
+                    <Col className="ms-auto me-auto" lg="8">
                       <Row>
                         <Col md="4">
                           <Button
@@ -269,7 +269,7 @@ const Notifications = () => {
                         <button
                           aria-hidden={true}
                           className="close"
-                          data-dismiss="modal"
+                          data-bs-dismiss="modal"
                           type="button"
                           onClick={toggleModalClassic}
                         >
@@ -299,7 +299,7 @@ const Notifications = () => {
                         </Button>
                         <Button
                           color="danger"
-                          data-dismiss="modal"
+                          data-bs-dismiss="modal"
                           type="button"
                           onClick={toggleModalClassic}
                         >
@@ -314,7 +314,7 @@ const Notifications = () => {
                         <button
                           aria-hidden={true}
                           className="close"
-                          data-dismiss="modal"
+                          data-bs-dismiss="modal"
                           type="button"
                           onClick={toggleModalNotice}
                         >
@@ -383,7 +383,7 @@ const Notifications = () => {
                         <Button
                           className="btn-round"
                           color="info"
-                          data-dismiss="modal"
+                          data-bs-dismiss="modal"
                           type="button"
                           onClick={toggleModalNotice}
                         >
@@ -402,7 +402,7 @@ const Notifications = () => {
                         <button
                           aria-hidden={true}
                           className="close"
-                          data-dismiss="modal"
+                          data-bs-dismiss="modal"
                           type="button"
                           onClick={toggleModalMini}
                         >
@@ -427,7 +427,7 @@ const Notifications = () => {
                         <Button
                           className="btn-neutral"
                           color="link"
-                          data-dismiss="modal"
+                          data-bs-dismiss="modal"
                           type="button"
                           onClick={toggleModalMini}
                         >

@@ -1,0 +1,94 @@
+// Bootstrap 4 to 5 Compatibility Layer
+
+// Theme Colors
+(
+  "primary": $blue,
+  "secondary": $gray-600,
+  "success": $green,
+  "info": $cyan,
+  "warning": $yellow,
+  "danger": $red,
+  "light": $light,
+  "dark": $dark
+): (
+  "primary": $blue,
+  "secondary": $gray-600,
+  "success": $green,
+  "info": $cyan,
+  "warning": $yellow,
+  "danger": $red,
+  "light": $light,
+  "dark": $dark,
+  "default": $gray-600
+);
+
+// Creative Tim specific variables
+$opacity-1: rgba($white, .1);
+rgba($white, 0.2): rgba($white, .2);
+rgba($white, 0.5): rgba($white, .5);
+$opacity-6: rgba($white, .6);
+rgba($white, 0.8): rgba($white, .8);
+
+$opacity-gray-3: rgba($gray-600, .3);
+$opacity-gray-5: rgba($gray-600, .5);
+$opacity-gray-8: rgba($gray-600, .8);
+
+// State colors
+@function shade-color($color, $weight) {
+  @return mix(black, $color, $weight);
+}
+
+$gray-600-states: shade-color($gray-600, 10%);
+$blue-states: shade-color($blue, 10%);
+$green-states: shade-color($green, 10%);
+$cyan-states: shade-color($cyan, 10%);
+$yellow-states: shade-color($yellow, 10%);
+$red-states: shade-color($red, 10%);
+
+// Utility classes for compatibility
+@each $breakpoint in map-keys((
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+)) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+));
+
+    .float#{$infix}-left { @include float-start; }
+    .float#{$infix}-right { @include float-end; }
+    
+    .ml#{$infix}-0 { margin-left: 0 !important; }
+    .mr#{$infix}-0 { margin-right: 0 !important; }
+    .pl#{$infix}-0 { padding-left: 0 !important; }
+    .pr#{$infix}-0 { padding-right: 0 !important; }
+  }
+}
+
+// Form compatibility
+.form-check { @extend .form-check; }
+.form-check { @extend .form-check; }
+.form-check { @extend .form-check; }
+.form-switch { @extend .form-switch; }
+.form-select { @extend .form-select; }
+.form-control { @extend .form-control; }
+.form-label { @extend .form-label; }
+.form-range { @extend .form-range; }
+
+// Data attribute compatibility
+[data-bs-toggle="dropdown"] { @extend [data-bs-toggle="dropdown"]; }
+[data-bs-toggle="tooltip"] { @extend [data-bs-toggle="tooltip"]; }
+[data-bs-toggle="popover"] { @extend [data-bs-toggle="popover"]; }
+[data-bs-toggle="modal"] { @extend [data-bs-toggle="modal"]; }
+[data-bs-toggle="collapse"] { @extend [data-bs-toggle="collapse"]; }
+
+// Import this file in your main SCSS file

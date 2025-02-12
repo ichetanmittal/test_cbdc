@@ -9,13 +9,13 @@
             color: $white;
             margin: 0;
             margin-right: 5px;
-            background-color: $transparent-bg;
+            background-color: transparent;
             border-radius: 30px;
             padding: $padding-btn-vertical $padding-round-horizontal;
             line-height: $line-height-sm;
 
             &:hover {
-                background-color: $transparent-bg;
+                background-color: transparent;
                 border: 1px solid darken($black,5%);
                 color: rgba($white, 0.8);
             }
@@ -45,7 +45,7 @@
                 color: $white;
 
                 &.active{
-                    border-color: $opacity-5;
+                    border-color: rgba($white, 0.5);
                     color: $white;
                 }
             }
@@ -56,8 +56,8 @@
         > .nav-item{
             > .nav-link{
                 &.active{
-                    border-color: $primary;
-                    color: $primary;
+                    border-color: $blue;
+                    color: $blue;
                 }
             }
         }
@@ -67,8 +67,8 @@
         > .nav-item{
             > .nav-link{
                 &.active{
-                    border-color: $info;
-                    color: $info;
+                    border-color: $cyan;
+                    color: $cyan;
                 }
             }
         }
@@ -78,8 +78,8 @@
         > .nav-item{
             > .nav-link{
                 &.active{
-                    border-color: $danger;
-                    color: $danger;
+                    border-color: $red;
+                    color: $red;
                 }
             }
         }
@@ -89,8 +89,8 @@
         > .nav-item{
             > .nav-link{
                 &.active{
-                    border-color: $warning;
-                    color: $warning;
+                    border-color: $yellow;
+                    color: $yellow;
                 }
             }
         }
@@ -100,8 +100,8 @@
         > .nav-item{
             > .nav-link{
                 &.active{
-                    border-color: $success;
-                    color: $success;
+                    border-color: $green;
+                    color: $green;
                 }
             }
         }

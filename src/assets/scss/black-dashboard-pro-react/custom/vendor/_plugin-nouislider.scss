@@ -130,7 +130,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   border-radius: 3px;
 }
 .noUi-connect {
-  background: $default;
+  background: $gray-600;
   border-radius: 3px;
   -webkit-transition: background 450ms;
 	transition: background 450ms;
@@ -314,11 +314,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 	&.slider-primary {
 		& .noUi-connect,
         &.noUi-connect {
-            background-color: $primary;
+            background-color: $blue;
         }
 
 		&.noUi-target {
-			background-color: $primary-opacity;
+			background-color: $blue-opacity;
 		}
 
 		& .noUi-handle {
@@ -334,7 +334,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         }
 
 		&.noUi-target {
-			background-color: $info-opacity;
+			background-color: $cyan-opacity;
 		}
 
 		& .noUi-handle {
@@ -349,7 +349,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         }
 
         &.noUi-target {
-			background-color: $success-opacity;
+			background-color: $green-opacity;
 		}
 
 		& .noUi-handle {
@@ -364,7 +364,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         }
 
         &.noUi-target {
-			background-color: $warning-opacity;
+			background-color: $yellow-opacity;
 		}
 
 		& .noUi-handle {
@@ -379,7 +379,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         }
 
         &.noUi-target {
-			background-color: $danger-opacity;
+			background-color: $red-opacity;
 		}
 
 		& .noUi-handle {

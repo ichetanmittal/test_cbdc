@@ -8,7 +8,7 @@
     border-radius: $border-radius-lg;
     cursor: pointer;
 
-    @include btn-styles($default, $default-states);
+    @include btn-styles($gray-600, $gray-600-states);
 
     &:hover,
     &:focus{
@@ -102,22 +102,22 @@
 }
 
 // Apply the mixin to the buttons
-// .btn-default { @include btn-styles($default-color, $default-states-color); }
-.btn-primary { @include btn-styles($primary, $primary-states);
+// .btn-default { @include btn-styles($gray-600-color, $gray-600-states-color); }
+.btn-primary { @include btn-styles($blue, $blue-states);
 
               }
-.btn-success { @include btn-styles($success, $success-states);
+.btn-success { @include btn-styles($green, $green-states);
 
               }
-.btn-info    { @include btn-styles($info, $info-states);
+.btn-info    { @include btn-styles($cyan, $cyan-states);
 
               }
-.btn-warning { @include btn-styles($warning, $warning-states);
+.btn-warning { @include btn-styles($yellow, $yellow-states);
                 &:not(:disabled):not(.disabled):active{
                   color: $white;
                 }
               }
-.btn-danger  { @include btn-styles($danger, $danger-states);
+.btn-danger  { @include btn-styles($red, $red-states);
 
               }
 .btn-neutral { @include btn-styles($white, $white); }
@@ -132,10 +132,10 @@
 }
 .btn-simple{
     border: $border;
-    border-color: $default;
+    border-color: $gray-600;
     box-shadow: none;
     padding: $padding-btn-vertical - 1 $padding-round-horizontal - 1;
-    background-color: $transparent-bg;
+    background-color: transparent;
 }
 
 .btn-simple,
@@ -150,7 +150,7 @@
         &.focus,
         &:active,
         &.active {
-            background: $transparent-bg;
+            background: transparent;
         }
     }
 }
@@ -162,9 +162,9 @@
     border: $none;
     box-shadow: none;
     padding: $padding-base-vertical $padding-base-horizontal;
-    background: $transparent-bg;
+    background: transparent;
     color: $gray-300;
-    font-weight: $font-weight-bold;
+    font-weight: $fw-bold;
 
   &:hover {
     box-shadow: none !important;

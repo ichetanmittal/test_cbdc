@@ -35,30 +35,30 @@
                 }
 
                 &.icon-info + .info-title{
-                    color: $info;
+                    color: $cyan;
                 }
 
                 &.icon-warning + .info-title{
-                    color: $warning;
+                    color: $yellow;
                 }
 
                 &.icon-danger + .info-title{
-                    color: $danger;
+                    color: $red;
                 }
 
                 &.icon-primary + .info-title{
-                    color: $primary;
+                    color: $blue;
                 }
 
                 &.icon-success + .info-title{
-                    color: $success;
+                    color: $green;
                 }
             }
         }
     }
 
     .icon{
-        color: $default;
+        color: $gray-600;
         transition: transform .4s, box-shadow .4s;
 
         > i{
@@ -86,10 +86,10 @@
         margin: $margin-base-vertical 0 5px;
         padding: 0 15px;
         color: $black;
-        font-weight: $font-weight-bold;
+        font-weight: $fw-bold;
     }
     p{
-        color: $default;
+        color: $gray-600;
         padding: 0 15px;
         font-size: 1.1em;
     }
@@ -132,35 +132,35 @@
         color: $brand-primary;
 
         &.icon-circle{
-            box-shadow: 0px 9px 30px -6px rgba($primary, .5);
+            box-shadow: 0px 9px 30px -6px rgba($blue, .5);
         }
     }
     &.icon-info{
         color: $brand-info;
 
         &.icon-circle{
-            box-shadow: 0px 9px 30px -6px rgba($info, .5);
+            box-shadow: 0px 9px 30px -6px rgba($cyan, .5);
         }
     }
     &.icon-success{
         color: $brand-success;
 
         &.icon-circle{
-            box-shadow: 0px 9px 30px -6px rgba($success, .5);
+            box-shadow: 0px 9px 30px -6px rgba($green, .5);
         }
     }
     &.icon-warning{
         color: $brand-warning;
 
         &.icon-circle{
-            box-shadow: 0px 9px 30px -6px rgba($warning, .5);
+            box-shadow: 0px 9px 30px -6px rgba($yellow, .5);
         }
     }
     &.icon-danger{
         color: $brand-danger;
 
         &.icon-circle{
-            box-shadow: 0px 9px 30px -6px rgba($danger, .5);
+            box-shadow: 0px 9px 30px -6px rgba($red, .5);
         }
     }
 

@@ -50,7 +50,7 @@ const Register = () => {
       <div className="content">
         <Container>
           <Row>
-            <Col className="ml-auto" md="5">
+            <Col className="ms-auto" md="5">
               <div className="info-area info-horizontal mt-5">
                 <div className="icon icon-warning">
                   <i className="tim-icons icon-wifi" />
@@ -88,7 +88,7 @@ const Register = () => {
                 </div>
               </div>
             </Col>
-            <Col className="mr-auto" md="7">
+            <Col className="me-auto" md="7">
               <Card className="card-register card-white">
                 <CardHeader>
                   <CardImg
@@ -154,7 +154,7 @@ const Register = () => {
                         onBlur={(e) => setState({ ...state, passFocus: false })}
                       />
                     </InputGroup>
-                    <FormGroup check className="text-left">
+                    <FormGroup check className="text-start">
                       <Label check>
                         <Input type="checkbox" />
                         <span className="form-check-sign" />I agree to the{" "}

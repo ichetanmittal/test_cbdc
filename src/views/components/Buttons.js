@@ -260,7 +260,7 @@ const Buttons = () => {
                 </ButtonGroup>
                 <br />
                 <br />
-                <ButtonGroup data-toggle="buttons">
+                <ButtonGroup data-bs-toggle="buttons">
                   <Button className="btn-round" color="info" type="button">
                     1
                   </Button>

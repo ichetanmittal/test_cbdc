@@ -17,22 +17,22 @@
   }
 
   > tbody > tr.table-success > td{
-    background-color: darken($success,10%);
+    background-color: darken($green,10%);
   }
 
   > tbody > tr.table-info > td{
-    background-color: $info;
+    background-color: $cyan;
   }
 
   > tbody > tr.table-primary > td{
-    background-color: $primary;
+    background-color: $blue;
   }
 
   > tbody > tr.table-warning > td{
-    background-color: $warning;
+    background-color: $yellow;
   }
   > tbody > tr.table-danger > td{
-    background-color: $danger;
+    background-color: $red;
   }
 
 
@@ -130,14 +130,14 @@
    }
    .td-price{
        font-size: 26px;
-       font-weight: $font-weight-light;
+       font-weight: $fw-light;
        margin-top: 5px;
        position: relative;
        top: 4px;
        text-align: right;
    }
    .td-total{
-        font-weight: $font-weight-bold;
+        font-weight: $fw-bold;
         font-size: $h5-font-size;
         padding-top: 20px;
         text-align: right;
@@ -171,16 +171,16 @@
         }
     }
     .td-name{
-        font-weight: $font-weight-normal;
+        font-weight: $fw-normal;
         font-size: 1.5em;
         small{
             color: $dark-gray;
             font-size: 0.75em;
-            font-weight: $font-weight-light;
+            font-weight: $fw-light;
         }
     }
     .td-number{
-       font-weight: $font-weight-light;
+       font-weight: $fw-light;
 
        .btn-group {
          padding-right: 15px;

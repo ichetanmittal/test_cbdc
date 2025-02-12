@@ -53,7 +53,7 @@
         text-align: center;
         margin-top: -160px;
         font-weight: 900;
-        color: rgba($default-states,0.1);
+        color: rgba($gray-600-states,0.1);
       }
 
       .plan{
@@ -74,10 +74,10 @@
 
         li{
             color: rgba($white, 0.9);
-            background: $transparent-bg;
+            background: transparent;
             text-align: center;
             font-size: 1.2em;
-            font-weight: $font-weight-bold;
+            font-weight: $fw-bold;
             padding: 5px 0;
             border: none;
 
@@ -92,41 +92,41 @@
       }
       .card-body .card-prices{
         .text-on-front, .plan {
-            color: $default-states;
+            color: $gray-600-states;
             span{
-              color: $default-states;
+              color: $gray-600-states;
             }
         }
       }
 
       ul li{
 
-        color: $default-states;
+        color: $gray-600-states;
       }
 
       .list-group-item{
-        background: $transparent-bg;
+        background: transparent;
       }
     }
 
     &.card-primary{
       .card-body .card-prices{
         .text-on-back{
-          color: rgba($primary,0.1);
+          color: rgba($blue,0.1);
         }
       }
     }
 
     &.card-info{
       .text-on-back{
-        color: rgba($info,0.1);
+        color: rgba($cyan,0.1);
       }
     }
 
     &.card-success{
       .card-body .card-prices{
         .text-on-back{
-          color: rgba($success,0.1);
+          color: rgba($green,0.1);
         }
       }
     }
@@ -134,7 +134,7 @@
     &.card-warning{
       .card-body .card-prices{
         .text-on-back{
-          color: rgba($warning,0.1);
+          color: rgba($yellow,0.1);
         }
       }
     }
@@ -142,14 +142,14 @@
     &.card-danger{
       .card-body .card-prices{
         .text-on-back{
-          color: rgba($danger,0.1);
+          color: rgba($red,0.1);
         }
       }
     }
 
     &.card-raised{
       z-index: 3;
-      box-shadow: 0px 0px 40px 15px rgba($default-states,0.3);
+      box-shadow: 0px 0px 40px 15px rgba($gray-600-states,0.3);
       padding: 20px 0;
       margin-top: -20px;
       border-radius: $border-radius-sm;

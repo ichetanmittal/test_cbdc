@@ -119,7 +119,7 @@ const Timeline = () => {
                             caret
                             className="btn-round"
                             color="info"
-                            data-toggle="dropdown"
+                            data-bs-toggle="dropdown"
                             type="button"
                           >
                             <i className="tim-icons icon-settings-gear-63" />{" "}

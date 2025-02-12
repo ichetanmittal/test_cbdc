@@ -126,7 +126,7 @@
         box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.3);
 
         i{
-            color: $primary;
+            color: $blue;
             font-size: 21px;
             margin-top: -10px;
         }
@@ -138,22 +138,22 @@
         }
 
         &.modal-profile-primary{
-            background-color: $primary;
+            background-color: $blue;
         }
 
         &.modal-profile-danger{
-            background-color: $danger;
+            background-color: $red;
         }
 
         &.modal-profile-warning{
-            background-color: $warning;
+            background-color: $yellow;
         }
         &.modal-profile-success{
-            background-color: $success;
+            background-color: $green;
         }
 
         &.modal-profile-info{
-            background-color: $info;
+            background-color: $cyan;
         }
     }
 
@@ -162,27 +162,27 @@
     }
 
     &.modal-primary{
-        @include modal-colors($primary, $white);
+        @include modal-colors($blue, $white);
     }
 
     &.modal-danger{
-        @include modal-colors($danger, $white);
+        @include modal-colors($red, $white);
     }
 
     &.modal-warning{
-        @include modal-colors($warning, $white);
+        @include modal-colors($yellow, $white);
     }
 
     &.modal-success{
-        @include modal-colors($success, $white);
+        @include modal-colors($green, $white);
     }
 
     &.modal-info{
-        @include modal-colors($info, $white);
+        @include modal-colors($cyan, $white);
     }
 
     .modal-header .close{
-        color: $danger;
+        color: $red;
         text-shadow: none;
 
         &:hover,

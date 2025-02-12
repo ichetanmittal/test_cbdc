@@ -376,8 +376,8 @@ select.selectpicker {
 }
 .bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:before {
   content: '';
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
+  border-start: 7px solid transparent;
+  border-end: 7px solid transparent;
   border-bottom: 7px solid rgba(204, 204, 204, 0.2);
   position: absolute;
   bottom: -4px;
@@ -386,8 +386,8 @@ select.selectpicker {
 }
 .bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:after {
   content: '';
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-start: 6px solid transparent;
+  border-end: 6px solid transparent;
   border-bottom: 6px solid white;
   position: absolute;
   bottom: -4px;
@@ -464,7 +464,7 @@ select.selectpicker {
     }
 
     li.disabled a {
-      color: $default-opacity;
+      color: $gray-600-opacity;
 
       &:hover,
       &:focus{

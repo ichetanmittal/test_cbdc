@@ -48,13 +48,13 @@
     right: auto;
     color: #ffffff;
     border-bottom: 0.4em solid;
-    border-right: 0.4em solid transparent;
-    border-left: 0.4em solid transparent;
+    border-end: 0.4em solid transparent;
+    border-start: 0.4em solid transparent;
   }
   &:after {
     border-bottom: 0.4em solid #ffffff;
-    border-right: 0.4em solid transparent;
-    border-left: 0.4em solid transparent;
+    border-end: 0.4em solid transparent;
+    border-start: 0.4em solid transparent;
     content: "";
     display: inline-block;
     position: absolute;
@@ -118,7 +118,7 @@
   &.rdtToday.rdtActive,
   &.rdtActive,
   &.rdtActive:hover {
-    background-color: $primary !important;
+    background-color: $blue !important;
     color: $white !important;
   }
 }
@@ -139,7 +139,7 @@
       color: $dark-gray;
       &.rdtOld,
       &.rdtNew {
-        color: $default;
+        color: $gray-600;
         font-weight: 300;
       }
     }
@@ -220,7 +220,7 @@
   th.rdtNext,
   th.rdtPrev,
   .rdtTimeToggle {
-    color: $primary;
+    color: $blue;
   }
 }
 
@@ -318,9 +318,9 @@ td.rdtYear:hover {
 .rdtCounters {
   .rdtCounter:last-child {
     .rdtCount {
-      color: $primary;
+      color: $blue;
       border-radius: 50%;
-      border: 1px solid $primary;
+      border: 1px solid $blue;
     }
   }
 }
@@ -356,7 +356,7 @@ td.rdtYear:hover {
   // color: #fff;
   // background-color: transparent;
   // cursor: pointer;
-  // @include btn-styles($primary, $primary-states-color);
+  // @include btn-styles($blue, $blue-states-color);
   // margin: 2px 0;
   // transition: 0.3s ease-in-out;
   // &:hover{
@@ -412,7 +412,7 @@ td.rdtYear:hover {
     text-align: center;
 
     &.rdtActive {
-      background-color: $primary !important;
+      background-color: $blue !important;
       color: $white;
     }
   }

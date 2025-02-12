@@ -48,7 +48,7 @@ const Rtl = () => {
       <div className="content">
         <Row>
           <Col className="text-center" lg="6" sm="6">
-            <Card className="card-tasks text-left">
+            <Card className="card-tasks text-start">
               <CardHeader>
                 <h6 className="title d-inline">تتبع</h6>
                 <p className="card-category d-inline">اليوم</p>
@@ -58,7 +58,7 @@ const Rtl = () => {
                     aria-haspopup={true}
                     caret
                     color="link"
-                    data-toggle="dropdown"
+                    data-bs-toggle="dropdown"
                     id="dropdownMenuLink"
                   >
                     <i className="tim-icons icon-settings-gear-63" />
@@ -104,7 +104,7 @@ const Rtl = () => {
                             </Label>
                           </FormGroup>
                         </td>
-                        <td className="text-right">
+                        <td className="text-end">
                           <p className="title">مركز معالجة موقع محور</p>
                           <p className="text-muted">نص آخر هناالوثائق</p>
                         </td>
@@ -136,7 +136,7 @@ const Rtl = () => {
                             </Label>
                           </FormGroup>
                         </td>
-                        <td className="text-right">
+                        <td className="text-end">
                           <p className="title">لامتثال GDPR</p>
                           <p className="text-muted">
                             الناتج المحلي الإجمالي هو نظام يتطلب من الشركات
@@ -173,7 +173,7 @@ const Rtl = () => {
                             </Label>
                           </FormGroup>
                         </td>
-                        <td className="text-right">
+                        <td className="text-end">
                           <p className="title">القضاياالقضايا</p>
                           <p className="text-muted">
                             سيكونونقال 50٪ من جميع المستجيبين أنهم سيكونون أكثر
@@ -212,7 +212,7 @@ const Rtl = () => {
                             </Label>
                           </FormGroup>
                         </td>
-                        <td className="text-right">
+                        <td className="text-end">
                           <p className="title">
                             تصدير الملفات التي تمت معالجتها
                           </p>
@@ -253,7 +253,7 @@ const Rtl = () => {
                             </Label>
                           </FormGroup>
                         </td>
-                        <td className="text-right">
+                        <td className="text-end">
                           <p className="title">الوصول إلى عملية التصدير</p>
                           <p className="text-muted">
                             سياسة السيء إنطلاق في قبل, مساعدة والمانيا أخذ قد.
@@ -290,7 +290,7 @@ const Rtl = () => {
                             </Label>
                           </FormGroup>
                         </td>
-                        <td className="text-right">
+                        <td className="text-end">
                           <p className="title">الافراج عن v2.0.0</p>
                           <p className="text-muted">
                             عن رئيس طوكيو البولندي لمّ, مايو مرجع وباءت قبل هو,
@@ -334,13 +334,13 @@ const Rtl = () => {
                   <Col xs="6">
                     <div className="card-stats justify-content-center">
                       <div className="d-flex justify-content-center align-items-center">
-                        <span className="ml-n4 mt-3">على</span>
+                        <span className="ms-n4 mt-3">على</span>
                         <CustomInput
                           type="switch"
                           id="switch-1"
                           defaultChecked
                         />
-                        <span className="mr-3 mt-3">إيقاف</span>
+                        <span className="me-3 mt-3">إيقاف</span>
                       </div>
                       <span>جميع المساهمات العامة</span>
                     </div>
@@ -348,9 +348,9 @@ const Rtl = () => {
                   <Col xs="6">
                     <div className="card-stats justify-content-center">
                       <div className="d-flex justify-content-center align-items-center">
-                        <span className="ml-n4 mt-3">على</span>
+                        <span className="ms-n4 mt-3">على</span>
                         <CustomInput type="switch" id="switch-2" />
-                        <span className="mr-3 mt-3">إيقاف</span>
+                        <span className="me-3 mt-3">إيقاف</span>
                       </div>
                       <span>مساهمات الأسبوع الماضي</span>
                     </div>
@@ -367,7 +367,7 @@ const Rtl = () => {
                     <div className="timeline-badge danger">
                       <i className="tim-icons icon-bag-16" />
                     </div>
-                    <div className="timeline-panel text-right">
+                    <div className="timeline-panel text-end">
                       <div className="timeline-heading">
                         <Badge color="danger" pill>
                           بعض العنوان
@@ -391,7 +391,7 @@ const Rtl = () => {
                     <div className="timeline-badge success">
                       <i className="tim-icons icon-gift-2" />
                     </div>
-                    <div className="timeline-panel text-right">
+                    <div className="timeline-panel text-end">
                       <div className="timeline-heading">
                         <Badge color="success" pill>
                           واحدة أخرى
@@ -412,7 +412,7 @@ const Rtl = () => {
                     <div className="timeline-badge info">
                       <i className="tim-icons icon-planet" />
                     </div>
-                    <div className="timeline-panel text-right">
+                    <div className="timeline-panel text-end">
                       <div className="timeline-heading">
                         <Badge color="info" pill>
                           عنوان آخر
@@ -438,7 +438,7 @@ const Rtl = () => {
                             caret
                             className="btn-round"
                             color="info"
-                            data-toggle="dropdown"
+                            data-bs-toggle="dropdown"
                             type="button"
                           >
                             <i className="tim-icons icon-bullet-list-67" />

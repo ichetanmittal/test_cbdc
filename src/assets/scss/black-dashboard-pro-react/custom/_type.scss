@@ -13,20 +13,20 @@ textarea{
 }
 .card{
   h1,h2,h3,h4,h5,h6,p{
-    color: $opacity-8;
+    color: rgba($white, 0.8);
   }
 }
 h1,h2,h3,h4,h5,h6{
-    font-weight: $font-weight-normal;
-    color: $opacity-8;
+    font-weight: $fw-normal;
+    color: rgba($white, 0.8);
 }
 
 a{
-    color: $primary-states;
-    font-weight: $font-weight-light;
+    color: $blue-states;
+    font-weight: $fw-light;
     &:hover,
     &:focus{
-        color: $primary;
+        color: $blue;
     }
 }
 h1, .h1 {
@@ -34,7 +34,7 @@ h1, .h1 {
     margin-bottom: $margin-base-vertical * 2;
 
     small{
-        font-weight: $font-weight-bold;
+        font-weight: $fw-bold;
         text-transform: uppercase;
         opacity: .8;
     }
@@ -64,10 +64,10 @@ h5, .h5 {
 }
 h6, .h6{
     text-transform: uppercase;
-    font-weight: $font-weight-bold;
+    font-weight: $fw-bold;
 }
 p{
-    color: $opacity-8;
+    color: rgba($white, 0.8);
     margin-bottom: 5px;
 
     &.description{
@@ -77,7 +77,7 @@ p{
 
 
 .title{
-    font-weight: $font-weight-bold;
+    font-weight: $fw-bold;
     &.title-up{
         text-transform: uppercase;
 
@@ -96,12 +96,12 @@ p{
 .footer-big p,
 .card .footer .stats{
     color: $dark-gray;
-    font-weight: $font-weight-light;
+    font-weight: $fw-light;
 }
 .category,
 .card-category{
     text-transform: capitalize;
-    font-weight: $font-weight-normal;
+    font-weight: $fw-normal;
     color: rgba($white, 0.6);
     font-size: $font-size-sm;
 }
@@ -111,42 +111,42 @@ p{
 }
 
 .blockquote{
-    border-left: none;
-    border: 1px solid $default;
+    border-start: none;
+    border: 1px solid $gray-600;
     padding: 20px;
     font-size: $blockquote-font-size;
     line-height: 1.8;
 
     small{
-        color: $default;
+        color: $gray-600;
         font-size: $font-size-sm;
         text-transform: uppercase;
     }
 
     &.blockquote-primary{
-        border-color: $primary;
-        color: $primary;
+        border-color: $blue;
+        color: $blue;
 
         small{
-            color: $primary;
+            color: $blue;
         }
     }
 
     &.blockquote-danger{
-        border-color: $danger;
-        color: $danger;
+        border-color: $red;
+        color: $red;
 
         small{
-            color: $danger;
+            color: $red;
         }
     }
 
     &.blockquote-white{
-        border-color: $opacity-8;
+        border-color: rgba($white, 0.8);
         color: $white;
 
         small{
-            color: $opacity-8;
+            color: rgba($white, 0.8);
         }
     }
 }
@@ -156,11 +156,11 @@ ul li, ol li{
 }
 
 pre{
-  color: $opacity-8;
+  color: rgba($white, 0.8);
 }
 
 hr{
   border-top: 1px solid rgba(0,0,0,0.1);
-  margin-top: $spacer;
-  margin-bottom: $spacer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

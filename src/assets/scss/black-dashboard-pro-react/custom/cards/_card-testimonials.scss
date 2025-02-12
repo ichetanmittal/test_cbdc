@@ -24,23 +24,23 @@
         }
 
         &.icon-primary i{
-            color: $primary;
+            color: $blue;
         }
 
         &.icon-info i{
-            color: $info;
+            color: $cyan;
         }
 
         &.icon-danger i{
-            color: $danger;
+            color: $red;
         }
 
         &.icon-warning i{
-            color: $warning;
+            color: $yellow;
         }
 
         &.icon-success i{
-            color: $success;
+            color: $green;
         }
     }
 }

@@ -13,13 +13,13 @@
 
     &.dropdown-black {
       background: linear-gradient(to bottom, $black 0%, $black-states 100%);
-      border: 1px solid $default;
+      border: 1px solid $gray-600;
       .dropdown-item {
         color: rgba(255, 255, 255, 0.7);
       }
 
       .dropdown-divider {
-        border-color: $default;
+        border-color: $gray-600;
       }
 
       &:before {
@@ -38,10 +38,10 @@
         top: -6px;
         left: 10px;
         right: auto;
-        color: $default;
+        color: $gray-600;
         border-bottom: .4em solid;
-        border-right: .4em solid transparent;
-        border-left: .4em solid transparent;
+        border-end: .4em solid transparent;
+        border-start: .4em solid transparent;
       }
 
       &.dropdown-menu-right {
@@ -70,8 +70,8 @@
           left: 10px;
           color: $dark-background;
           border-top: .4em solid;
-          border-right: .4em solid transparent;
-          border-left: .4em solid transparent;
+          border-end: .4em solid transparent;
+          border-start: .4em solid transparent;
           border-bottom: none;
           z-index: 1;
         }
@@ -118,8 +118,8 @@
           left: 10px;
           color: $white;
           border-top: .4em solid;
-          border-right: .4em solid transparent;
-          border-left: .4em solid transparent;
+          border-end: .4em solid transparent;
+          border-start: .4em solid transparent;
           border-bottom: none;
         }
 
@@ -145,8 +145,8 @@
       right: auto;
       color: $white;
       border-bottom: .4em solid;
-      border-right: .4em solid transparent;
-      border-left: .4em solid transparent;
+      border-end: .4em solid transparent;
+      border-start: .4em solid transparent;
     }
 
 
@@ -171,7 +171,7 @@
 
       &.disabled,
       &:disabled {
-        color: $default-opacity;
+        color: $gray-600-opacity;
 
         &:hover,
         &:focus {
@@ -187,30 +187,30 @@
     }
 
     .dropdown-header:not([href]):not([tabindex]) {
-        color: $default-opacity;
+        color: $gray-600-opacity;
         font-size: $font-size-xs;
         text-transform: uppercase;
-        font-weight: $font-weight-bold;
+        font-weight: $fw-bold;
     }
 
     &.dropdown-primary {
-        @include dropdown-colors(darken($primary, 3%),$opacity-8,$white, $opacity-2);
+        @include dropdown-colors(darken($blue, 3%),rgba($white, 0.8),$white, rgba($white, 0.2));
     }
 
     &.dropdown-info {
-        @include dropdown-colors(darken($info, 3%),$opacity-8,$white, $opacity-2);
+        @include dropdown-colors(darken($cyan, 3%),rgba($white, 0.8),$white, rgba($white, 0.2));
     }
 
     &.dropdown-danger {
-        @include dropdown-colors(darken($danger, 3%),$opacity-8,$white, $opacity-2);
+        @include dropdown-colors(darken($red, 3%),rgba($white, 0.8),$white, rgba($white, 0.2));
     }
 
     &.dropdown-success {
-        @include dropdown-colors(darken($success, 3%),$opacity-8,$white, $opacity-2);
+        @include dropdown-colors(darken($green, 3%),rgba($white, 0.8),$white, rgba($white, 0.2));
     }
 
     &.dropdown-warning {
-        @include dropdown-colors(darken($warning, 3%),$opacity-8,$white, $opacity-2);
+        @include dropdown-colors(darken($yellow, 3%),rgba($white, 0.8),$white, rgba($white, 0.2));
     }
 
     .dropdown &,
@@ -280,7 +280,7 @@
 .btn{
     cursor: pointer;
 
-    &.dropdown-toggle[data-toggle="dropdown"]{
+    &.dropdown-toggle[data-bs-toggle="dropdown"]{
         padding:10px;
         margin: 0;
         margin-bottom: 5px;
@@ -346,9 +346,9 @@
       vertical-align: .255em;
       content: "";
       border-top: .3em solid;
-      border-right: .3em solid transparent;
+      border-end: .3em solid transparent;
       border-bottom: 0;
-      border-left: .3em solid transparent;
+      border-start: .3em solid transparent;
 
   }
 }

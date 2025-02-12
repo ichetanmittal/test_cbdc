@@ -43,15 +43,15 @@
         }
     }
 
-    .sidebar-wrapper .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon,
-    .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon {
+    .sidebar-wrapper .nav [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon,
+    .sidebar-wrapper .user .info [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon {
       float: right;
       margin-left: 15px;
       margin-right: 0;
     }
 
-    .sidebar-wrapper > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
-    .sidebar-wrapper .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal {
+    .sidebar-wrapper > .nav [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+    .sidebar-wrapper .user .info [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-normal {
       text-align: right;
     }
 

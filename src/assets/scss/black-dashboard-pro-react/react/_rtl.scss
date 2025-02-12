@@ -1,9 +1,9 @@
 .rtl {
-  .sidebar .nav li.active > a[data-toggle="collapse"]:before,
+  .sidebar .nav li.active > a[data-bs-toggle="collapse"]:before,
   .sidebar
     .nav
     li.active
-    > a[data-toggle="collapse"]
+    > a[data-bs-toggle="collapse"]
     + div
     .nav
     .active
@@ -31,14 +31,14 @@
       &:before {
         right: unset;
         left: -16px;
-        border-left: unset;
-        border-right: 0.4em solid rgba(0, 0, 0, 0.2);
+        border-start: unset;
+        border-end: 0.4em solid rgba(0, 0, 0, 0.2);
       }
       &:after {
         right: unset;
         left: -16px;
-        border-left: unset;
-        border-right: 0.4em solid $black;
+        border-start: unset;
+        border-end: 0.4em solid $black;
       }
     }
   }

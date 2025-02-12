@@ -56,7 +56,7 @@ const Charts = () => {
           .
         </p>
         <Row className="mt-5">
-          <Col className="ml-auto" md="5">
+          <Col className="ms-auto" md="5">
             <Card className="card-chart">
               <CardHeader>
                 <h5 className="card-category">Simple With Gradient</h5>
@@ -75,7 +75,7 @@ const Charts = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col className="mr-auto" md="5">
+          <Col className="me-auto" md="5">
             <Card className="card-chart">
               <CardHeader>
                 <h5 className="card-category">With Numbers and Grid</h5>
@@ -95,7 +95,7 @@ const Charts = () => {
           </Col>
         </Row>
         <Row>
-          <Col className="ml-auto" md="5">
+          <Col className="ms-auto" md="5">
             <Card className="card-chart">
               <CardHeader>
                 <h5 className="card-category">Gradient Bar Chart</h5>
@@ -114,7 +114,7 @@ const Charts = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col className="mr-auto" md="5">
+          <Col className="me-auto" md="5">
             <Card className="card-chart">
               <CardHeader>
                 <h5 className="card-category">Multiple Bars Chart With Grid</h5>
@@ -135,7 +135,7 @@ const Charts = () => {
           </Col>
         </Row>
         <Row>
-          <Col className="ml-auto" md="5">
+          <Col className="ms-auto" md="5">
             <Card className="card-chart card-chart-pie">
               <CardHeader>
                 <h5 className="card-category">Simple Pie Chart</h5>
@@ -161,7 +161,7 @@ const Charts = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col className="mr-auto" md="5">
+          <Col className="me-auto" md="5">
             <Card className="card-chart card-chart-pie">
               <CardHeader>
                 <h5 className="card-category">Multiple Pie Chart</h5>

@@ -6,46 +6,46 @@
     border-radius: $border-radius-lg;
     &:focus,
     &:active {
-      border: 1px solid lighten($primary, 5%);
+      border: 1px solid lighten($blue, 5%);
     }
   }
   .form-group:not(.has-danger):not(.has-success),
   .input-group-focus:not(.has-danger):not(.has-success) {
     .input-group-prepend .input-group-text,
     .input-group-append .input-group-text {
-      border-color: $info;
+      border-color: $cyan;
     }
     .form-control {
       &:focus {
-        border-color: $info;
+        border-color: $cyan;
         & + .input-group-append .input-group-text,
         & ~ .input-group-append .input-group-text,
         & + .input-group-prepend .input-group-text,
         & ~ .input-group-prepend .input-group-text {
-          border: 1px solid $info;
+          border: 1px solid $cyan;
         }
       }
     }
   }
   .input-group-focus:not(.has-danger):not(.has-success) {
     .form-control {
-      border-color: $info;
+      border-color: $cyan;
       & + .input-group-append .input-group-text,
       & ~ .input-group-append .input-group-text,
       & + .input-group-prepend .input-group-text,
       & ~ .input-group-prepend .input-group-text {
-        border: 1px solid $info;
+        border: 1px solid $cyan;
       }
     }
   }
 }
 .sweet-alert input.form-control:focus {
-  border-color: $info;
+  border-color: $cyan;
   & + .input-group-append .input-group-text,
   & ~ .input-group-append .input-group-text,
   & + .input-group-prepend .input-group-text,
   & ~ .input-group-prepend .input-group-text {
-    border: 1px solid $info;
+    border: 1px solid $cyan;
   }
 }
 .form-group .input-group-append .input-group-text,
@@ -65,12 +65,12 @@
 }
 .input-group-append:last-child {
   .input-group-text {
-    border-left: 0 !important;
+    border-start: 0 !important;
   }
 }
 .input-group .form-control:not(:first-child):not(:last-child),
 .input-group-btn:not(:first-child):not(:last-child) {
-  border-right: none;
+  border-end: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }

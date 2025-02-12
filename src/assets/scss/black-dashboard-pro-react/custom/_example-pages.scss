@@ -38,12 +38,12 @@
         }
 
         &.card-plain{
-            @include input-coloured-bg($opacity-5, $white, $white, $transparent-bg, $opacity-1, $opacity-2);
+            @include input-coloured-bg(rgba($white, 0.5), $white, $white, transparent, $opacity-1, rgba($white, 0.2));
 
             .input-group-addon,
             .form-group.no-border .input-group-addon,
             .input-group.no-border .input-group-addon{
-                color: $opacity-8;
+                color: rgba($white, 0.8);
             }
         }
 
@@ -60,7 +60,7 @@
           @include form-control-placeholder(rgba($black,0.4), 1);
             .has-danger{
               .form-control, .input-group-prepend .input-group-text{
-                border-color: $danger-states;
+                border-color: $red-states;
               }
             }
 
@@ -73,7 +73,7 @@
               color: $black;
               border-color: rgba($black-states,0.2);
               &:focus{
-                border-color: $primary;
+                border-color: $blue;
               }
             }
 
@@ -97,7 +97,7 @@
                       & + .input-group-prepend .input-group-text,
                       & + .input-group-append .input-group-text{
 
-                          background-color: $transparent-bg;
+                          background-color: transparent;
                       }
                   }
               }
@@ -122,7 +122,7 @@
               .input-group-append .input-group-text,
               .form-control{
                 background-color: $white;
-                border-color: $primary;
+                border-color: $blue;
               }
 
               &.no-border{
@@ -134,19 +134,19 @@
               }
           }
           .input-group-prepend .input-group-text {
-              border-right: none;
+              border-end: none;
           }
 
           .input-group-append .input-group-text {
-              border-left: none;
+              border-start: none;
           }
 
           .has-danger .form-control:focus, .has-success.input-group-focus .input-group-append .input-group-text, .has-success.input-group-focus .input-group-prepend .input-group-text {
-            border-color: $danger-states;
+            border-color: $red-states;
           }
 
           .has-success .form-control:focus, .has-success.input-group-focus .input-group-append .input-group-text, .has-success.input-group-focus .input-group-prepend .input-group-text {
-            border-color: darken($success, 10%);
+            border-color: darken($green, 10%);
           }
 
         }

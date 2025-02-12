@@ -48,7 +48,7 @@ const Wizard = () => {
   return (
     <>
       <div className="content">
-        <Col className="mr-auto ml-auto" md="10">
+        <Col className="me-auto ms-auto" md="10">
           <ReactWizard
             steps={steps}
             navSteps

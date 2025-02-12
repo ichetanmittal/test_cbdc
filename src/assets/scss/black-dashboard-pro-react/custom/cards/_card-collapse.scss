@@ -1,14 +1,14 @@
 .card-collapse{
     .card{
         margin-bottom: 0px;
-        background: $transparent-bg;
+        background: transparent;
         box-shadow: none;
 
         .card-header{
             position: relative;
             padding: 1rem 0.75rem;
 
-            a[data-toggle="collapse"]{
+            a[data-bs-toggle="collapse"]{
                 display: block;
                 color: rgba($white,0.6);
 
@@ -16,7 +16,7 @@
                 i{
                     float: right;
                     position: relative;
-                    color: $primary;
+                    color: $blue;
                     top: 1px;
                     @extend .animation-transition-general;
                 }

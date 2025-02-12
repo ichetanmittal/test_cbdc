@@ -165,7 +165,7 @@ const ReactTables = () => {
   return (
     <>
       <div className="content">
-        <Col md={8} className="ml-auto mr-auto">
+        <Col md={8} className="ms-auto me-auto">
           <h2 className="text-center">React Table</h2>
           <p className="text-center">
             A powerful react plugin handcrafted by our friends from{" "}

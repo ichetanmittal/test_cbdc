@@ -44,7 +44,7 @@ const User = () => {
               <CardBody>
                 <Form>
                   <Row>
-                    <Col className="pr-md-1" md="5">
+                    <Col className="pe-md-1" md="5">
                       <FormGroup>
                         <label>Company (disabled)</label>
                         <Input
@@ -60,7 +60,7 @@ const User = () => {
                         <Input defaultValue="michael23" type="text" />
                       </FormGroup>
                     </Col>
-                    <Col className="pl-md-1" md="4">
+                    <Col className="ps-md-1" md="4">
                       <FormGroup>
                         <label>Email address</label>
                         <Input placeholder="mike@email.com" type="email" />
@@ -68,13 +68,13 @@ const User = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col className="pr-md-1" md="6">
+                    <Col className="pe-md-1" md="6">
                       <FormGroup>
                         <label>First Name</label>
                         <Input defaultValue="Mike" type="text" />
                       </FormGroup>
                     </Col>
-                    <Col className="pl-md-1" md="6">
+                    <Col className="ps-md-1" md="6">
                       <FormGroup>
                         <label>Last Name</label>
                         <Input defaultValue="Andrew" type="text" />
@@ -94,7 +94,7 @@ const User = () => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col className="pr-md-1" md="4">
+                    <Col className="pe-md-1" md="4">
                       <FormGroup>
                         <label>City</label>
                         <Input defaultValue="Mike" type="text" />
@@ -106,7 +106,7 @@ const User = () => {
                         <Input defaultValue="Andrew" type="text" />
                       </FormGroup>
                     </Col>
-                    <Col className="pl-md-1" md="4">
+                    <Col className="ps-md-1" md="4">
                       <FormGroup>
                         <label>Postal Code</label>
                         <Input placeholder="ZIP Code" type="number" />

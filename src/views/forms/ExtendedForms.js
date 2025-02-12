@@ -171,24 +171,24 @@ const ExtendedForms = () => {
                       <Col md="4">
                         <p className="category">With Text</p>
                         <div className="d-flex align-items-center">
-                          <span className="mr-2">Left text</span>
+                          <span className="me-2">Left text</span>
                           <CustomInput
                             type="switch"
                             id="switch-5"
                             className="mt-n4"
                           />
-                          <span className="ml-n2">Right text</span>
+                          <span className="ms-n2">Right text</span>
                         </div>
                         <br />
                         <div className="d-flex align-items-center">
-                          <span className="mr-2">Left text</span>
+                          <span className="me-2">Left text</span>
                           <CustomInput
                             type="switch"
                             id="switch-6"
                             className="mt-n4"
                             defaultChecked
                           />
-                          <span className="ml-n2">Right text</span>
+                          <span className="ms-n2">Right text</span>
                         </div>
                       </Col>
                     </Row>
@@ -275,7 +275,7 @@ const ExtendedForms = () => {
                             caret
                             className="btn-block"
                             color="primary"
-                            data-toggle="dropdown"
+                            data-bs-toggle="dropdown"
                             id="dropdownMenuButton"
                             type="button"
                           >
@@ -310,7 +310,7 @@ const ExtendedForms = () => {
                             caret
                             className="btn-block"
                             color="primary"
-                            data-toggle="dropdown"
+                            data-bs-toggle="dropdown"
                             type="button"
                           >
                             Dropup

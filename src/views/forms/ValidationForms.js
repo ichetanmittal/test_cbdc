@@ -367,7 +367,7 @@ const ValidationForms = () => {
                     * Required fields
                   </div>
                 </CardBody>
-                <CardFooter className="text-right">
+                <CardFooter className="text-end">
                   <FormGroup check className="pull-left">
                     <Label check>
                       <Input name="optionCheckboxes" type="checkbox" />
@@ -429,7 +429,7 @@ const ValidationForms = () => {
                     * Required fields
                   </div>
                 </CardBody>
-                <CardFooter className="text-left">
+                <CardFooter className="text-start">
                   <Button color="primary" onClick={loginClick}>
                     Login
                   </Button>

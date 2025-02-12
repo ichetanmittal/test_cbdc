@@ -23,7 +23,7 @@ const Grid = () => {
   return (
     <>
       <div className="content">
-        <h4 className="title pl-3">
+        <h4 className="title ps-3">
           XS Grid <small>Always Horizontal</small>
         </h4>
         <Row>
@@ -49,7 +49,7 @@ const Grid = () => {
             </Card>
           </Col>
         </Row>
-        <h4 className="title pl-3">
+        <h4 className="title ps-3">
           SM Grid <small>Collapsed at 576px</small>
         </h4>
         <Row>
@@ -75,7 +75,7 @@ const Grid = () => {
             </Card>
           </Col>
         </Row>
-        <h4 className="title pl-3">
+        <h4 className="title ps-3">
           MD Grid <small>Collapsed at 768px</small>
         </h4>
         <Row>
@@ -101,7 +101,7 @@ const Grid = () => {
             </Card>
           </Col>
         </Row>
-        <h4 className="title pl-3">
+        <h4 className="title ps-3">
           LG Grid <small>Collapsed at 992px</small>
         </h4>
         <Row>
@@ -127,7 +127,7 @@ const Grid = () => {
             </Card>
           </Col>
         </Row>
-        <h4 className="title pl-3">
+        <h4 className="title ps-3">
           XL Grid <small>Collapsed at 1200px</small>
         </h4>
         <Row>
@@ -153,7 +153,7 @@ const Grid = () => {
             </Card>
           </Col>
         </Row>
-        <h4 className="title pl-3">
+        <h4 className="title ps-3">
           Mixed Grid <small>Showing different sizes on different screens</small>
         </h4>
         <Row>
@@ -186,7 +186,7 @@ const Grid = () => {
             </Card>
           </Col>
         </Row>
-        <h4 className="title pl-3">
+        <h4 className="title ps-3">
           Offset Grid <small>Adding some space when needed</small>
         </h4>
         <Row>
@@ -197,35 +197,35 @@ const Grid = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col className="ml-auto" md="3">
+          <Col className="ms-auto" md="3">
             <Card>
               <CardBody className="text-center py-5">
-                <code>col-md-3 ml-auto</code>
+                <code>col-md-3 ms-auto</code>
               </CardBody>
             </Card>
           </Col>
         </Row>
         <Row>
-          <Col className="ml-auto mr-auto" md="4">
+          <Col className="ms-auto me-auto" md="4">
             <Card>
               <CardBody className="text-center py-5">
-                <code>col-md-4 ml-auto mr-auto</code>
+                <code>col-md-4 ms-auto me-auto</code>
               </CardBody>
             </Card>
           </Col>
-          <Col className="ml-auto mr-auto" md="4">
+          <Col className="ms-auto me-auto" md="4">
             <Card>
               <CardBody className="text-center py-5">
-                <code>col-md-4 ml-auto mr-auto</code>
+                <code>col-md-4 ms-auto me-auto</code>
               </CardBody>
             </Card>
           </Col>
         </Row>
         <Row>
-          <Col className="ml-auto mr-auto" md="6">
+          <Col className="ms-auto me-auto" md="6">
             <Card>
               <CardBody className="text-center py-5">
-                <code>col-md-6 ml-auto mr-auto</code>
+                <code>col-md-6 ms-auto me-auto</code>
               </CardBody>
             </Card>
           </Col>

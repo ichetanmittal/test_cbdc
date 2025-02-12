@@ -25,7 +25,7 @@
         font-size: $font-size-sm;
         text-transform: uppercase;
 
-        &.float-left{
+        &.float-start{
           margin-right: 20px;
         }
 
@@ -38,7 +38,7 @@
         .progress-bar {
           border-radius:$border-radius-xl;
           box-shadow: none;
-          background: $default;
+          background: $gray-600;
 
           .progress-value{
             position: absolute;
@@ -66,31 +66,31 @@
 
     &.progress-primary{
       .progress-bar{
-        @include diagonal-gradient($primary-states, $primary);
+        @include diagonal-gradient($blue-states, $blue);
       }
     }
 
     &.progress-info{
       .progress-bar{
-        @include diagonal-gradient($info-states, $info);
+        @include diagonal-gradient($cyan-states, $cyan);
       }
     }
 
     &.progress-success{
       .progress-bar{
-        @include diagonal-gradient($success-states, $success);
+        @include diagonal-gradient($green-states, $green);
       }
     }
 
     &.progress-warning{
       .progress-bar{
-        @include diagonal-gradient($warning-states, $warning);
+        @include diagonal-gradient($yellow-states, $yellow);
       }
     }
 
     &.progress-danger{
       .progress-bar{
-        @include diagonal-gradient($danger-states, $danger);
+        @include diagonal-gradient($red-states, $red);
       }
     }
 }

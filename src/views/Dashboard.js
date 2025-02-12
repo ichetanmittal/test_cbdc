@@ -80,14 +80,14 @@ const Dashboard = () => {
             <Card className="card-chart">
               <CardHeader>
                 <Row>
-                  <Col className="text-left" sm="6">
+                  <Col className="text-start" sm="6">
                     <h5 className="card-category">Total Shipments</h5>
                     <CardTitle tag="h2">Performance</CardTitle>
                   </Col>
                   <Col sm="6">
                     <ButtonGroup
-                      className="btn-group-toggle float-right"
-                      data-toggle="buttons"
+                      className="btn-group-toggle float-end"
+                      data-bs-toggle="buttons"
                     >
                       <Button
                         color="info"
@@ -321,7 +321,7 @@ const Dashboard = () => {
                     caret
                     className="btn-icon"
                     color="link"
-                    data-toggle="dropdown"
+                    data-bs-toggle="dropdown"
                     type="button"
                   >
                     <i className="tim-icons icon-settings-gear-63" />
@@ -369,7 +369,7 @@ const Dashboard = () => {
                             Dwuamish Head, Seattle, WA 8:47 AM
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip786630859"
@@ -410,7 +410,7 @@ const Dashboard = () => {
                             member states.
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip155151810"
@@ -445,7 +445,7 @@ const Dashboard = () => {
                             more likely to shop at a company
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip199559448"
@@ -479,7 +479,7 @@ const Dashboard = () => {
                             Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip989676508"
@@ -515,7 +515,7 @@ const Dashboard = () => {
                             personal data occurs.
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip557118868"
@@ -549,7 +549,7 @@ const Dashboard = () => {
                             Capitol Hill, Seattle, WA 12:34 AM
                           </p>
                         </td>
-                        <td className="td-actions text-right">
+                        <td className="td-actions text-end">
                           <Button
                             color="link"
                             id="tooltip143185858"
@@ -575,13 +575,13 @@ const Dashboard = () => {
           <Col lg="7">
             <Card>
               <CardHeader>
-                <div className="tools float-right">
+                <div className="tools float-end">
                   <UncontrolledDropdown>
                     <DropdownToggle
                       caret
                       className="btn-icon"
                       color="link"
-                      data-toggle="dropdown"
+                      data-bs-toggle="dropdown"
                       type="button"
                     >
                       <i className="tim-icons icon-settings-gear-63" />
@@ -625,8 +625,8 @@ const Dashboard = () => {
                       <th>Name</th>
                       <th>Job Position</th>
                       <th>Milestone</th>
-                      <th className="text-right">Salary</th>
-                      <th className="text-right">Actions</th>
+                      <th className="text-end">Salary</th>
+                      <th className="text-end">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -649,8 +649,8 @@ const Dashboard = () => {
                           </Progress>
                         </div>
                       </td>
-                      <td className="text-right">€ 99,225</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 99,225</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon btn-neutral"
                           color="success"
@@ -701,8 +701,8 @@ const Dashboard = () => {
                           </Progress>
                         </div>
                       </td>
-                      <td className="text-right">€ 89,241</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 89,241</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon btn-neutral"
                           color="success"
@@ -753,8 +753,8 @@ const Dashboard = () => {
                           </Progress>
                         </div>
                       </td>
-                      <td className="text-right">€ 92,144</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 92,144</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon btn-neutral"
                           color="success"
@@ -805,8 +805,8 @@ const Dashboard = () => {
                           </Progress>
                         </div>
                       </td>
-                      <td className="text-right">€ 49,990</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 49,990</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon"
                           color="success"
@@ -857,8 +857,8 @@ const Dashboard = () => {
                           </Progress>
                         </div>
                       </td>
-                      <td className="text-right">€ 69,201</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 69,201</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon"
                           color="success"
@@ -912,8 +912,8 @@ const Dashboard = () => {
                           </Progress>
                         </div>
                       </td>
-                      <td className="text-right">€ 99,201</td>
-                      <td className="text-right">
+                      <td className="text-end">€ 99,201</td>
+                      <td className="text-end">
                         <Button
                           className="btn-link btn-icon"
                           color="success"
@@ -971,8 +971,8 @@ const Dashboard = () => {
                             </div>
                           </td>
                           <td>USA</td>
-                          <td className="text-right">2.920</td>
-                          <td className="text-right">53.23%</td>
+                          <td className="text-end">2.920</td>
+                          <td className="text-end">53.23%</td>
                         </tr>
                         <tr>
                           <td>
@@ -984,8 +984,8 @@ const Dashboard = () => {
                             </div>
                           </td>
                           <td>Germany</td>
-                          <td className="text-right">1.300</td>
-                          <td className="text-right">20.43%</td>
+                          <td className="text-end">1.300</td>
+                          <td className="text-end">20.43%</td>
                         </tr>
                         <tr>
                           <td>
@@ -997,8 +997,8 @@ const Dashboard = () => {
                             </div>
                           </td>
                           <td>Australia</td>
-                          <td className="text-right">760</td>
-                          <td className="text-right">10.35%</td>
+                          <td className="text-end">760</td>
+                          <td className="text-end">10.35%</td>
                         </tr>
                         <tr>
                           <td>
@@ -1010,8 +1010,8 @@ const Dashboard = () => {
                             </div>
                           </td>
                           <td>United Kingdom</td>
-                          <td className="text-right">690</td>
-                          <td className="text-right">7.87%</td>
+                          <td className="text-end">690</td>
+                          <td className="text-end">7.87%</td>
                         </tr>
                         <tr>
                           <td>
@@ -1023,8 +1023,8 @@ const Dashboard = () => {
                             </div>
                           </td>
                           <td>Romania</td>
-                          <td className="text-right">600</td>
-                          <td className="text-right">5.94%</td>
+                          <td className="text-end">600</td>
+                          <td className="text-end">5.94%</td>
                         </tr>
                         <tr>
                           <td>
@@ -1036,13 +1036,13 @@ const Dashboard = () => {
                             </div>
                           </td>
                           <td>Brasil</td>
-                          <td className="text-right">550</td>
-                          <td className="text-right">4.34%</td>
+                          <td className="text-end">550</td>
+                          <td className="text-end">4.34%</td>
                         </tr>
                       </tbody>
                     </Table>
                   </Col>
-                  <Col className="ml-auto mr-auto" md="6">
+                  <Col className="ms-auto me-auto" md="6">
                     <VectorMap
                       map={"world_mill"}
                       backgroundColor="transparent"

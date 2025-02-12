@@ -56,60 +56,60 @@
 
     // btn-neutral style
     @if $btn-color == $white{
-        color: $primary;
+        color: $blue;
 
         &.btn-danger{
-            color: $danger;
+            color: $red;
 
             &:hover,
             &:focus,
             &:active,
             &:active:focus{
-                color: $danger-states;
+                color: $red-states;
             }
         }
 
         &.btn-info{
-            color: $info;
+            color: $cyan;
 
             &:hover,
             &:focus,
             &:active,
             &:active:focus{
-                color: $info-states;
+                color: $cyan-states;
             }
         }
 
         &.btn-warning{
-            color: $warning;
+            color: $yellow;
 
             &:hover,
             &:focus,
             &:active,
             &:active:focus{
-                color: $warning-states;
+                color: $yellow-states;
             }
         }
 
         &.btn-success{
-            color: $success;
+            color: $green;
 
             &:hover,
             &:focus,
             &:active,
             &:active:focus{
-                color: $success-states;
+                color: $green-states;
             }
         }
 
         &.btn-default{
-            color: $default;
+            color: $gray-600;
 
             &:hover,
             &:focus,
             &:active,
             &:active:focus{
-                color: $default-states;
+                color: $gray-600-states;
             }
         }
 
@@ -123,13 +123,13 @@
         .show > &.dropdown-toggle:focus,
         .show > &.dropdown-toggle:hover {
             background-color: $white;
-            color: $primary-states;
+            color: $blue-states;
             box-shadow: none;
         }
 
         &:hover,
         &:focus{
-            color: $primary-states;
+            color: $blue-states;
 
             &:not(.nav-link){
                 box-shadow: none;
@@ -144,7 +144,7 @@
     &.btn-simple{
         color: $btn-color;
         border-color: $btn-color;
-        background: $transparent-bg;
+        background: transparent;
 
         &:hover,
         &:focus,
@@ -152,7 +152,7 @@
         &:not(:disabled):not(.disabled):active{
             color: $btn-color;
             border-color: $btn-color;
-            background-color: $transparent-bg !important;
+            background-color: transparent !important;
             background-image: none !important;
             box-shadow: none;
         }
@@ -180,7 +180,7 @@
         &:hover,
         &:focus,
         &:active{
-            background-color: $transparent-bg !important;
+            background-color: transparent !important;
             background-image: none !important;
             color: $white !important;
             text-decoration: none;
@@ -316,7 +316,7 @@
 
     &.btn-simple{
         color: $state-color;
-        background-color: $transparent-bg;
+        background-color: transparent;
         background-image: none !important;
         box-shadow: none;
         border-color: $state-color;

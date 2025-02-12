@@ -9,26 +9,26 @@
         opacity: 1;
     }
 
-    @include set-wizard-color($primary);
+    @include set-wizard-color($blue);
 
     &[data-color="primary"]{
-        @include set-wizard-color($primary);
+        @include set-wizard-color($blue);
     }
 
     &[data-color="green"]{
-        @include set-wizard-color(darken($success,10%));
+        @include set-wizard-color(darken($green,10%));
     }
 
     &[data-color="blue"]{
-        @include set-wizard-color($info);
+        @include set-wizard-color($cyan);
     }
 
     &[data-color="red"]{
-        @include set-wizard-color($danger);
+        @include set-wizard-color($red);
     }
 
     &[data-color="orange"]{
-        @include set-wizard-color($warning);
+        @include set-wizard-color($yellow);
     }
 
     .nav-pills .nav-item {
@@ -48,7 +48,7 @@
             top: 110%;
             left: 50%;
             transform: translate(-50%);
-            font-weight: $font-weight-normal;
+            font-weight: $fw-normal;
             color: $white;
           }
 
@@ -225,7 +225,7 @@
             height: 116px;
             width: 116px;
             border-radius: 50%;
-            color: $default;
+            color: $gray-600;
             margin: 0 auto 20px;
             border: 1px solid $light-gray;
             transition: all 0.2s;

@@ -47,7 +47,7 @@
 .form-check input[type="checkbox"]:checked + .form-check-sign::before,
 .form-check input[type="checkbox"]:checked + .form-check-sign::before{
   border: none;
-  background-color: $primary;
+  background-color: $blue;
 }
 
  .form-check .form-check-sign::after{
@@ -58,7 +58,7 @@
   font-size: 14px;
   opacity: 0;
   color: $white;
-  font-weight: $font-weight-bold;
+  font-weight: $fw-bold;
   border: 0;
   background-color: inherit;
 }
@@ -128,15 +128,15 @@
 .form-check-radio input[type="radio"]:checked + .form-check-sign::after {
     width: 6px;
     height: 6px;
-    background-color: $primary;
-    border-color: $primary;
+    background-color: $blue;
+    border-color: $blue;
     top: 9px;
     left: 6px;
     opacity: 1;
 }
 
 .form-check-radio input[type="radio"]:checked + .form-check-sign::before {
-  border-color: $primary;
+  border-color: $blue;
 }
 
 

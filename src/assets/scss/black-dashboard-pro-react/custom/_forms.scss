@@ -9,7 +9,7 @@
 
 
   &:focus {
-    border-color: $primary;
+    border-color: $blue;
     background-color: $input-bg;
     @include box-shadow(none);
 
@@ -17,9 +17,9 @@
     & ~ .input-group-append .input-group-text,
     & + .input-group-prepend .input-group-text,
     & ~ .input-group-prepend .input-group-text {
-        border: 1px solid $primary;
-        border-left: none;
-        background-color: $transparent-bg;
+        border: 1px solid $blue;
+        border-start: none;
+        background-color: transparent;
     }
   }
 
@@ -49,7 +49,7 @@
 
   .open & {
       border-radius: $border-radius-lg $border-radius-lg 0 0;
-      border-bottom-color: $transparent-bg;
+      border-bottom-color: transparent;
   }
 
   & + .input-group-append .input-group-text,
@@ -68,7 +68,7 @@
 .has-success .form-control:focus,
 .has-success.input-group-focus .input-group-append .input-group-text,
 .has-success.input-group-focus .input-group-prepend .input-group-text {
-  border-color: darken($success, 10%);
+  border-color: darken($green, 10%);
 }
 
 .has-danger .form-control,
@@ -76,12 +76,12 @@
 .has-danger .input-group-prepend .input-group-text,
 .has-danger.input-group-focus .input-group-prepend .input-group-text,
 .has-danger.input-group-focus .input-group-append .input-group-text {
-    border-color: lighten($danger-states,5%);
-    color: $danger-states;
+    border-color: lighten($red-states,5%);
+    color: $red-states;
     background-color: rgba(222,222,222, .1);
 
     &:focus {
-        background-color: $transparent-bg;
+        background-color: transparent;
     }
 }
 
@@ -94,7 +94,7 @@
         position: absolute;
         right: 20px;
         top: 13px;
-        color: $success;
+        color: $green;
         font-size: 11px;
     }
 
@@ -117,18 +117,18 @@
     }
 
     &.form-check .form-check-label{
-      color: $success;
+      color: $green;
     }
 }
 
 .has-danger {
   &:after{
     content: "\ea48";
-    color: $danger-states;
+    color: $red-states;
   }
 
   &.form-check .form-check-label {
-    color: $danger-states;
+    color: $red-states;
   }
 
   &.input-group-focus {

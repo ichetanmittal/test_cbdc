@@ -49,7 +49,7 @@
   .rbc-header > a:visited,
   .rbc-header > a:hover,
   .rbc-time-gutter.rbc-time-column {
-    color: $default;
+    color: $gray-600;
   }
   .card {
     .map-title {
@@ -64,16 +64,16 @@
   .input-group-focus:not(.has-danger):not(.has-success) {
     .input-group-prepend .input-group-text,
     .input-group-append .input-group-text {
-      border-color: $info;
+      border-color: $cyan;
     }
     .form-control {
       &:focus {
-        border-color: $info;
+        border-color: $cyan;
         & + .input-group-append .input-group-text,
         & ~ .input-group-append .input-group-text,
         & + .input-group-prepend .input-group-text,
         & ~ .input-group-prepend .input-group-text {
-          border: 1px solid $info;
+          border: 1px solid $cyan;
         }
       }
     }
@@ -82,16 +82,16 @@
   .input-group-focus.has-danger {
     .input-group-prepend .input-group-text,
     .input-group-append .input-group-text {
-      border-color: $danger;
+      border-color: $red;
     }
     .form-control {
       &:focus {
-        border-color: $danger;
+        border-color: $red;
         & + .input-group-append .input-group-text,
         & ~ .input-group-append .input-group-text,
         & + .input-group-prepend .input-group-text,
         & ~ .input-group-prepend .input-group-text {
-          border: 1px solid $danger;
+          border: 1px solid $red;
         }
       }
     }

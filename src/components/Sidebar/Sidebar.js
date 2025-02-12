@@ -95,7 +95,7 @@ const Sidebar = (props) => {
           >
             <a
               href="#pablo"
-              data-toggle="collapse"
+              data-bs-toggle="collapse"
               aria-expanded={state[prop.state]}
               onClick={(e) => {
                 e.preventDefault();

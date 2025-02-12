@@ -21,9 +21,9 @@
 }
 
 .dropdown-toggle[aria-expanded="true"]:after,
-a[data-toggle="collapse"][aria-expanded="true"] .caret,
-.card-collapse .card a[data-toggle="collapse"][aria-expanded="true"] i,
-.card-collapse .card a[data-toggle="collapse"].expanded i{
+a[data-bs-toggle="collapse"][aria-expanded="true"] .caret,
+.card-collapse .card a[data-bs-toggle="collapse"][aria-expanded="true"] i,
+.card-collapse .card a[data-bs-toggle="collapse"].expanded i{
     @include rotate-180();
 }
 
@@ -32,8 +32,8 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
   height: 0;
   vertical-align: middle;
   border-top: 4px dashed;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+  border-end: 4px solid transparent;
+  border-start: 4px solid transparent;
   margin-top: -5px;
   position: absolute;
   top: 30px;
@@ -189,13 +189,13 @@ a[data-toggle="collapse"][aria-expanded="true"] .caret,
 
     .datepicker{
       thead th, table thead th,.tim-icons{
-        color: $primary;
+        color: $blue;
       }
 
     }
 
     .picker-switch .tim-icons{
-      color: $primary;
+      color: $blue;
     }
   }
 

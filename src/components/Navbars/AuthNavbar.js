@@ -58,7 +58,7 @@ const AuthNavbar = (props) => {
           aria-expanded={false}
           aria-label="Toggle navigation"
           className="navbar-toggler"
-          data-toggle="collapse"
+          data-bs-toggle="collapse"
           type="button"
           onClick={toggleCollapse}
         >
@@ -67,7 +67,7 @@ const AuthNavbar = (props) => {
           <span className="navbar-toggler-bar navbar-kebab" />
         </button>
         <Collapse isOpen={collapseOpen} navbar>
-          <Nav navbar className="ml-auto">
+          <Nav navbar className="ms-auto">
             <NavItem>
               <NavLink to="/admin/dashboard" className="nav-link text-primary">
                 <i className="tim-icons icon-minimal-left" /> Back to Dashboard

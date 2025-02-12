@@ -74,7 +74,7 @@ const Panels = () => {
                 <Nav className="nav-pills-info" pills>
                   <NavItem>
                     <NavLink
-                      data-toggle="tab"
+                      data-bs-toggle="tab"
                       href="#pablo"
                       className={horizontalTabs === "profile" ? "active" : ""}
                       onClick={(e) =>
@@ -86,7 +86,7 @@ const Panels = () => {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      data-toggle="tab"
+                      data-bs-toggle="tab"
                       href="#pablo"
                       className={horizontalTabs === "settings" ? "active" : ""}
                       onClick={(e) =>
@@ -98,7 +98,7 @@ const Panels = () => {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      data-toggle="tab"
+                      data-bs-toggle="tab"
                       href="#pablo"
                       className={horizontalTabs === "options" ? "active" : ""}
                       onClick={(e) =>
@@ -150,7 +150,7 @@ const Panels = () => {
                     <Nav className="nav-pills-info flex-column" pills>
                       <NavItem>
                         <NavLink
-                          data-toggle="tab"
+                          data-bs-toggle="tab"
                           href="#pablo"
                           className={verticalTabs === "profile" ? "active" : ""}
                           onClick={(e) =>
@@ -162,7 +162,7 @@ const Panels = () => {
                       </NavItem>
                       <NavItem>
                         <NavLink
-                          data-toggle="tab"
+                          data-bs-toggle="tab"
                           href="#pablo"
                           className={
                             verticalTabs === "settings" ? "active" : ""
@@ -176,7 +176,7 @@ const Panels = () => {
                       </NavItem>
                       <NavItem>
                         <NavLink
-                          data-toggle="tab"
+                          data-bs-toggle="tab"
                           href="#pablo"
                           className={verticalTabs === "options" ? "active" : ""}
                           onClick={(e) =>
@@ -239,8 +239,8 @@ const Panels = () => {
                     <a
                       aria-expanded={openedCollapseOne}
                       href="#pablo"
-                      data-parent="#accordion"
-                      data-toggle="collapse"
+                      data-bs-parent="#accordion"
+                      data-bs-toggle="collapse"
                       onClick={(e) => {
                         e.preventDefault();
                         setopenedCollapseOne(!openedCollapseOne);
@@ -271,8 +271,8 @@ const Panels = () => {
                     <a
                       aria-expanded={openedCollapseTwo}
                       href="#pablo"
-                      data-parent="#accordion"
-                      data-toggle="collapse"
+                      data-bs-parent="#accordion"
+                      data-bs-toggle="collapse"
                       onClick={(e) => {
                         e.preventDefault();
                         setopenedCollapseTwo(!openedCollapseTwo);
@@ -303,8 +303,8 @@ const Panels = () => {
                     <a
                       aria-expanded={openedCollapseThree}
                       href="#pablo"
-                      data-parent="#accordion"
-                      data-toggle="collapse"
+                      data-bs-parent="#accordion"
+                      data-bs-toggle="collapse"
                       onClick={(e) => {
                         e.preventDefault();
                         setopenedCollapseThree(!openedCollapseThree);
@@ -349,7 +349,7 @@ const Panels = () => {
                     >
                       <NavItem>
                         <NavLink
-                          data-toggle="tab"
+                          data-bs-toggle="tab"
                           href="#pablo"
                           className={
                             verticalTabsIcons === "home" ? "active" : ""
@@ -364,7 +364,7 @@ const Panels = () => {
                       </NavItem>
                       <NavItem>
                         <NavLink
-                          data-toggle="tab"
+                          data-bs-toggle="tab"
                           href="#pablo"
                           className={
                             verticalTabsIcons === "settings" ? "active" : ""
@@ -405,7 +405,7 @@ const Panels = () => {
           </Col>
         </Row>
         <Row>
-          <Col className="ml-auto mr-auto" md="8">
+          <Col className="ms-auto me-auto" md="8">
             <Card className="card-plain card-subcategories">
               <CardHeader>
                 <CardTitle className="text-center mt-5" tag="h4">
@@ -421,7 +421,7 @@ const Panels = () => {
                 >
                   <NavItem>
                     <NavLink
-                      data-toggle="tab"
+                      data-bs-toggle="tab"
                       href="#pablo"
                       className={pageTabs === "home" ? "active" : ""}
                       onClick={(e) => changeActiveTab(e, "pageTabs", "home")}
@@ -432,7 +432,7 @@ const Panels = () => {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      data-toggle="tab"
+                      data-bs-toggle="tab"
                       href="#pablo"
                       className={pageTabs === "messages" ? "active" : ""}
                       onClick={(e) =>
@@ -445,7 +445,7 @@ const Panels = () => {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                      data-toggle="tab"
+                      data-bs-toggle="tab"
                       href="#pablo"
                       className={pageTabs === "settings" ? "active" : ""}
                       onClick={(e) =>

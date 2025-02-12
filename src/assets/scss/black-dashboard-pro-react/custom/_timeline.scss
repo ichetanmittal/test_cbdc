@@ -90,8 +90,8 @@
                 right: -15px;
                 display: inline-block;
                 border-top: 15px solid transparent;
-                border-left: 15px solid $black;
-                border-right: 0 solid $black;
+                border-start: 15px solid $black;
+                border-end: 0 solid $black;
                 border-bottom: 15px solid transparent;
                 content: " ";
             }
@@ -102,8 +102,8 @@
                 right: -14px;
                 display: inline-block;
                 border-top: 14px solid transparent;
-                border-left: 14px solid $card-black-background;
-                border-right: 0 solid $card-black-background;
+                border-start: 14px solid $card-black-background;
+                border-end: 0 solid $card-black-background;
                 border-bottom: 14px solid transparent;
                 content: " ";
             }
@@ -115,8 +115,8 @@
               }
 
               &:after, &:before{
-                border-right-color: $white;
-                border-left-color: $white;
+                border-end-color: $white;
+                border-start-color: $white;
               }
             }
         }
@@ -159,15 +159,15 @@
             float: right;
 
             &:before {
-                border-left-width: 0;
-                border-right-width: 15px;
+                border-start-width: 0;
+                border-end-width: 15px;
                 left: -15px;
                 right: auto;
             }
 
             &:after {
-                border-left-width: 0;
-                border-right-width: 14px;
+                border-start-width: 0;
+                border-end-width: 14px;
                 left: -14px;
                 right: auto;
             }
@@ -180,22 +180,22 @@
         margin-bottom: 15px;
     }
     .timeline-badge.primary {
-      background-color: $info !important;
+      background-color: $cyan !important;
     }
     .timeline-badge.info {
-      background-color: $info !important;
+      background-color: $cyan !important;
     }
 
     .timeline-badge.success {
-      background-color: darken($success,10%) !important;
+      background-color: darken($green,10%) !important;
     }
 
     .timeline-badge.warning {
-      background-color: $warning !important;
+      background-color: $yellow !important;
     }
 
     .timeline-badge.danger {
-      background-color: $danger !important;
+      background-color: $red !important;
     }
 
 
@@ -233,15 +233,15 @@
             width: 83% !important;
 
             &:before{
-                border-left-width: 0;
-                border-right-width: 15px;
+                border-start-width: 0;
+                border-end-width: 15px;
                 left: -15px;
                 right: auto;
             }
 
             &:after{
-                border-left-width: 0;
-                border-right-width: 14px;
+                border-start-width: 0;
+                border-end-width: 14px;
                 left: -14px;
                 right: auto;
             }

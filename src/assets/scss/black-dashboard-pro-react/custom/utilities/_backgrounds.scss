@@ -2,7 +2,16 @@
 	@include bg-variant(".bg-#{$color}", $value, $ignore-warning: true);
 }
 
-@each $color, $value in $theme-colors {
+@each $color, $value in (
+  "primary": $blue,
+  "secondary": $gray-600,
+  "success": $green,
+  "info": $cyan,
+  "warning": $yellow,
+  "danger": $red,
+  "light": $light,
+  "dark": $dark
+) {
 	@include bg-gradient-variant(".bg-gradient-#{$color}", $value, $ignore-warning: true);
 }
 
@@ -21,13 +30,31 @@ section {
     @include bg-variant(".section-#{$color}", $value, $ignore-warning: true);
 }
 
-@each $color, $value in $theme-colors {
+@each $color, $value in (
+  "primary": $blue,
+  "secondary": $gray-600,
+  "success": $green,
+  "info": $cyan,
+  "warning": $yellow,
+  "danger": $red,
+  "light": $light,
+  "dark": $dark
+) {
     @include bg-gradient-variant(".bg-gradient-#{$color}", $value, $ignore-warning: true);
 }
 
 
 // Shape (svg) fill colors
-@each $color, $value in $theme-colors {
+@each $color, $value in (
+  "primary": $blue,
+  "secondary": $gray-600,
+  "success": $green,
+  "info": $cyan,
+  "warning": $yellow,
+  "danger": $red,
+  "light": $light,
+  "dark": $dark
+) {
     .fill-#{$color}  {
         fill: $value;
     }

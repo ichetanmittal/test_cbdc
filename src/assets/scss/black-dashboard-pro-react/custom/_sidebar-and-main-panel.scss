@@ -18,7 +18,7 @@
 }
 .sidebar,
 .off-canvas-sidebar{
-    @include linear-gradient($primary-states, $primary);
+    @include linear-gradient($blue-states, $blue);
     height: calc(100vh - 90px);
     width: 230px;
     position: fixed;
@@ -51,7 +51,7 @@
 
         > .nav,
         .user .info{
-          [data-toggle="collapse"] ~ div > ul > li > a{
+          [data-bs-toggle="collapse"] ~ div > ul > li > a{
               span{
                 display: inline-block;
                 @extend .animation-transition-general;
@@ -67,7 +67,7 @@
                 display: block;
                 line-height: 23px;
                 z-index: 1;
-                color: $opacity-8;
+                color: rgba($white, 0.8);
               }
 
               .sidebar-mini-icon{
@@ -83,7 +83,7 @@
                 z-index: 1;
                 display: inherit;
                 line-height: 24px;
-                color: $opacity-8;
+                color: rgba($white, 0.8);
               }
 
               i{
@@ -96,14 +96,14 @@
 
 
 
-        [data-toggle="collapse"] ~ div > ul > li:hover > a{
+        [data-bs-toggle="collapse"] ~ div > ul > li:hover > a{
           .sidebar-mini-icon, .sidebar-normal{
             color: $white;
           }
 
         }
 
-        .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon{
+        .nav [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon{
           opacity: 0;
         }
 
@@ -183,7 +183,7 @@
                 color: $white;
             }
 
-            &.active > a:not([data-toggle="collapse"]){
+            &.active > a:not([data-bs-toggle="collapse"]){
                 background: transparent;
 
                 i,p{
@@ -202,7 +202,7 @@
                 }
             }
 
-            &.active > a[data-toggle="collapse"]{
+            &.active > a[data-bs-toggle="collapse"]{
               background: transparent;
               box-shadow: none;
               color: $white;
@@ -216,7 +216,7 @@
                 box-shadow: none;
                 .sidebar-mini-icon, .sidebar-normal{
                   color: $white;
-                  font-weight: $font-weight-normal;
+                  font-weight: $fw-normal;
                 }
 
                 &:before{
@@ -260,7 +260,7 @@
             line-height: 30px;
             width: 34px;
             text-align: center;
-            color: $opacity-8;
+            color: rgba($white, 0.8);
             position: relative;
         }
     }
@@ -320,7 +320,7 @@
             right: 15px;
             height: 1px;
             width: calc(100% - 30px);
-            background: $opacity-5;
+            background: rgba($white, 0.5);
 
         }
 
@@ -341,7 +341,7 @@
              font-size: $font-size-base;
             color: $white;
             text-decoration: none;
-            font-weight: $font-weight-normal;
+            font-weight: $fw-normal;
             line-height: 30px;
             overflow: hidden;
         }
@@ -363,27 +363,27 @@
     }
 
     &[data="blue"]{
-      @include linear-gradient($info-states, $info);
+      @include linear-gradient($cyan-states, $cyan);
       &:before{
-        border-bottom-color: $info;
+        border-bottom-color: $cyan;
       }
     }
     &[data="green"]{
-      @include linear-gradient($success-states, $success);
+      @include linear-gradient($green-states, $green);
       &:before{
-        border-bottom-color: $success;
+        border-bottom-color: $green;
       }
     }
     &[data="orange"]{
-      @include linear-gradient($warning-states, $warning);
+      @include linear-gradient($yellow-states, $yellow);
       &:before{
-        border-bottom-color: $warning;
+        border-bottom-color: $yellow;
       }
     }
     &[data="red"]{
-      @include linear-gradient($danger-states, $danger);
+      @include linear-gradient($red-states, $red);
       &:before{
-        border-bottom-color: $danger;
+        border-bottom-color: $red;
       }
     }
 
@@ -400,7 +400,7 @@
             right: 15px;
             height: 1px;
             width: calc(100% - 30px);
-            background: $opacity-5;
+            background: rgba($white, 0.5);
         }
 
         .photo{
@@ -452,9 +452,9 @@
     &:before{
       content: "";
       position: absolute;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 5px solid $primary;
+      border-start: 5px solid transparent;
+      border-end: 5px solid transparent;
+      border-bottom: 5px solid $blue;
       top: -5px;
       left: 40px;
       transform: translate(-50%);
@@ -488,29 +488,29 @@
     float: right;
     width: $full-width;
     min-height: 100vh;
-    border-top: 2px solid $primary;
+    border-top: 2px solid $blue;
     background: linear-gradient($background-black, $background-states-black);
 
     @include transitions (0.50s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     &[data="blue"]{
-      border-top: 2px solid $info;
+      border-top: 2px solid $cyan;
     }
 
     &[data="green"]{
-      border-top: 2px solid $success;
+      border-top: 2px solid $green;
     }
 
     &[data="orange"]{
-      border-top: 2px solid $warning;
+      border-top: 2px solid $yellow;
     }
 
     &[data="red"]{
-      border-top: 2px solid $danger;
+      border-top: 2px solid $red;
     }
 
     &[data="primary"]{
-      border-top: 2px solid $primary;
+      border-top: 2px solid $blue;
     }
 
     > .content {
@@ -554,7 +554,7 @@
     }
     .category{
       max-width: 600px;
-      color: $opacity-5;
+      color: rgba($white, 0.5);
       margin: 0 auto;
       font-size: 13px;
 
@@ -718,8 +718,8 @@
           }
 
           .sidebar-wrapper{
-            > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
-            .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+            > .nav [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+            .user .info [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
             .user .info > a > span,
             > .nav li > a p{
                 @include transform-translate-x(-25px);
@@ -727,7 +727,7 @@
             }
           }
 
-          .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon{
+          .nav [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon{
             opacity: 1;
           }
         }
@@ -750,15 +750,15 @@
             width: $sidebar-width;
 
             > .nav li > a p,
-            > .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
-            .user .info [data-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+            > .nav [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
+            .user .info [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-normal,
             .user .info > a > span{
               @include transform-translate-x(0px);
               opacity: 1;
             }
           }
 
-          .nav [data-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon{
+          .nav [data-bs-toggle="collapse"] ~ div > ul > li > a .sidebar-mini-icon{
             opacity: 0;
           }
 
