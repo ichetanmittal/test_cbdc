@@ -60,6 +60,9 @@
   "overrides": {
     "svgo": "3.0.2",
     "@react-jvectormap/core": "1.0.4",
+    "workbox-webpack-plugin": "^7.0.0",
+    "workbox-build": "^7.0.0",
+    "serialize-javascript": "^6.0.2",
     "resolve-url-loader": {
       "postcss": "^8.4.31"
     },
